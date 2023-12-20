@@ -68,14 +68,61 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Rules and About pages */
+.rules-info, .credit-info {
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#back1, #back2 {
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 16%;
+    background-image: url('./images/back.png');
+    background-size: cover;
+}
+
+.text-info {
+    padding: 140px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ccc; 
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+
+footer img {
+    height: 70px;
+    margin: 15px;
+}
+
 /* Hover */
 
 .home .right  button:hover, .home .left  button:hover {
     filter: brightness(120%);
+    transform: translateY(-10px);
+    cursor: url('./images/cursor.png'), auto;
 }
 
 .button-container button:hover {
     background-color: rgb(20, 20, 20);
+}
+
+#back1:hover, #back2:hover, footer img:hover {
+    opacity: 0.8;
 }
 
 /* keep at bottom */
