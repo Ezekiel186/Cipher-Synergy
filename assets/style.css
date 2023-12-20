@@ -125,6 +125,13 @@ footer img {
     opacity: 0.8;
 }
 
+/* audio */
+#volumeSlider {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
 /* keep at bottom */
 
 .hide, audio {

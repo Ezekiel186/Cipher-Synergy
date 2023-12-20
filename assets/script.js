@@ -43,20 +43,6 @@ backBtnCredits.addEventListener('click', function() {
     buttonContainer.classList.remove('hide');
 });
 
-// player 1 room
-
-player1.addEventListener('click', function() {
-    home.classList.add('hide');
-    room1.classList.remove('hide');
-});
-
-// player 2 room
-
-player2.addEventListener('click', function() {
-    home.classList.add('hide');
-    room2.classList.remove('hide');
-});
-
 // Audio
 
 // music shuffler
@@ -65,7 +51,7 @@ var playlist = ["./assets/Music/2022-12-01_-_Looking_For_Clues_-_www.FesliyanStu
 var currentIndex = 0;
 var audio = document.createElement("audio");
 audio.controls = true; 
-audio.autoplay = true; 
+audio.autoplay = false; 
 audio.muted = false;
 audio.src = playlist[currentIndex];
 
@@ -93,3 +79,19 @@ function muteUnmute() {
 function changeVolume(value) {
    audio.volume = value;
 }
+
+// player 1 room
+
+player1.addEventListener('click', function() {
+    home.classList.add('hide');
+    room1.classList.remove('hide');
+    audio.play();
+});
+
+// player 2 room
+
+player2.addEventListener('click', function() {
+    home.classList.add('hide');
+    room2.classList.remove('hide');
+    audio.play();
+});
