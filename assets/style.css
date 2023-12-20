@@ -127,6 +127,6 @@ footer img {
 
 /* keep at bottom */
 
-.hide {
+.hide, audio {
     display: none;
 }
