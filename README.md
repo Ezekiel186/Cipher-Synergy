@@ -1,1 +1,1 @@
-# Dechipering-Duo
+# Cipher-Synergy
