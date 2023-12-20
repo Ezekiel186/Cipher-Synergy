@@ -50,7 +50,34 @@ player1.addEventListener('click', function() {
     room1.classList.remove('hide');
 });
 
+// player 2 room
+
 player2.addEventListener('click', function() {
     home.classList.add('hide');
     room2.classList.remove('hide');
+});
+
+// music shuffler
+
+var playlist = ["./assets/Music/2022-12-01_-_Looking_For_Clues_-_www.FesliyanStudios.com.mp3", "./assets/Music/2022-12-01_-_Background_Check_-_www.FesliyanStudios.com.mp3", "./assets/Music/2022-12-31_-_Scene_Of_The_Crime_-_www.FesliyanStudios.com.mp3","./assets/Music/2023-01-04_-_Witness_Testimony_-_www.FesliyanStudios.com.mp3","./assets/Music/2021-09-06_-_Solving_The_Crime_-_David_Fesliyan.mp3","./assets/Music/2019-05-01_-_Undercover_Spy_Agent_-_David_Fesliyan.mp3"];
+var currentIndex = 0;
+var audio = document.createElement("audio");
+audio.controls = true; 
+audio.autoplay = true; 
+audio.muted = false;
+audio.src = playlist[currentIndex];
+
+document.body.appendChild(audio);
+
+audio.addEventListener("ended", function() {
+    currentIndex++;
+
+    if (currentIndex === playlist.length) {
+        currentIndex = 0;
+    }
+
+    audio.src = playlist[currentIndex];
+
+    audio.load();
+    audio.play();
 });
