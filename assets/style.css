@@ -212,6 +212,16 @@ footer img {
     width: 600px;
     height: 600px;
     transform: rotate(7deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red img {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    transition: transform 0.5s ease-out;
 }
 
 

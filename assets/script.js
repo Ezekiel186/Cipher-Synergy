@@ -96,6 +96,21 @@ player1.addEventListener('click', function() {
     audio.play();
 });
 
+// clock
+let rotationAnglemin = 0;
+
+document.querySelector('.min').addEventListener('click', function () {
+    rotationAnglemin += 30; 
+    document.querySelector('.rotatem').style.transform = `rotate(${rotationAnglemin}deg)`;
+});
+
+let rotationAnglehour = 0;
+
+document.querySelector('.hour').addEventListener('click', function () {
+    rotationAnglehour += 30; 
+    document.querySelector('.rotateh').style.transform = `rotate(${rotationAnglehour}deg)`;
+});
+
 // player 2 room
 
 player2.addEventListener('click', function() {
