@@ -102,6 +102,8 @@ let rotationAnglemin = 0;
 document.querySelector('.min').addEventListener('click', function () {
     rotationAnglemin += 30; 
     document.querySelector('.rotatem').style.transform = `rotate(${rotationAnglemin}deg)`;
+    var clickSound = document.getElementById('clickSoundm');
+    clickSound.play();
 });
 
 let rotationAnglehour = 0;
@@ -109,6 +111,8 @@ let rotationAnglehour = 0;
 document.querySelector('.hour').addEventListener('click', function () {
     rotationAnglehour += 30; 
     document.querySelector('.rotateh').style.transform = `rotate(${rotationAnglehour}deg)`;
+    var clickSound = document.getElementById('clickSoundh');
+    clickSound.play();
 });
 
 // player 2 room

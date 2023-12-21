@@ -60,8 +60,8 @@
             <img class="rotateh" src="./assets/images/hour.png" alt="hour-hand">
         </div>
         <div class="clock-hands">
-            <button class="min">Min</button>
-            <button class="hour">Hour</button>
+            <button class="min"></button>
+            <button class="hour"></button>
         </div>
         <div class="volume-container">
             Volume
@@ -75,6 +75,8 @@
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
         </div>
     </div>
+    <audio id="clickSoundm" src="./assets/Music/click.mp4"></audio>    <audio id="clickSound" src="./assets/Music/click.mp4"></audio>
+    <audio id="clickSoundh" src="./assets/Music/mixkit-classic-click-1117.wav"></audio>
     <script src="./assets/script.js"></script>
 </body>
 </html>

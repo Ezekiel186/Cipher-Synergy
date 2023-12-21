@@ -224,6 +224,12 @@ footer img {
     transition: transform 0.5s ease-out;
 }
 
+.min, .hour {
+    background-image: url('./images/button.png');
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+}
 
 .room-one .clock-hands {
     position: absolute;
