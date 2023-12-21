@@ -132,8 +132,96 @@ footer img {
     left: 5px;
 }
 
+.volume-container {
+    background-color: black;
+    color: white;
+    width: 135px;
+    height: 35px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    /* -webkit-appearance: none; */
+    background: linear-gradient(to right, #04f3af 0%, #7e2a8e 100%); /* Change the colors as needed */
+}
+
 /* keep at bottom */
 
 .hide, audio {
     display: none;
+}
+
+/* Room 1 */
+.room-one, .room-two {
+    cursor: url('./images/cursor.png'), auto;
+    height: 98vh;
+    background-color: antiquewhite;
+}
+
+.room-one .blue {
+    position: absolute;
+    left: 50px;
+    background-color: blue;
+    width: 20%;
+    height: 55%;
+    transform: rotate(339deg);
+}
+
+.room-one .purple {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    background-color: purple;
+    width: 30%;
+    height: 40%;
+    transform: rotate(4deg);
+}
+
+.room-one .white {
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    background-color: lightgray;
+    width: 20%;
+    height: 40%;
+}
+
+.room-one .teal {
+    position: absolute;
+    left: 35%;
+    top: 30px;
+    background-color: teal;
+    width: 20%;
+    height: 35%;
+    transform: rotate(356deg);
+}
+
+.room-one .red {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background-color: red;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    transform: rotate(7deg);
+}
+
+
+.room-one .clock-hands {
+    position: absolute;
+    width: 30%;
+    bottom: 60px;
+    right: 90px;
+}
+
+.room-one .clock-hands button {
+    width: 100px;
+    height: 100px;
+    margin: 0 70px;
 }

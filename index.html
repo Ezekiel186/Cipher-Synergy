@@ -51,12 +51,26 @@
         
     </div>
     <div class="room-one hide">
-        Room1
-        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+        <div class="blue"></div>
+        <div class="purple"></div>
+        <div class="white"></div>
+        <div class="teal"></div>
+        <div class="red"></div>
+        <div class="clock-hands">
+            <button class="min">Min</button>
+            <button class="hour">Hour</button>
+        </div>
+        <div class="volume-container">
+            Volume
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+        </div>
     </div>
     <div class="room-two hide">
         Room2
-        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+        <div class="volume-container">
+            Volume
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+        </div>
     </div>
     <script src="./assets/script.js"></script>
 </body>
