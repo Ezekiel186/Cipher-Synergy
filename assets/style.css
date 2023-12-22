@@ -244,3 +244,57 @@ footer img {
     height: 100px;
     margin: 0 70px;
 }
+
+/* player 2 */
+
+.room-two .note {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    transform: rotate(-7deg);
+    background-image: url('./images/note.png');
+    background-size: cover;
+    background-color: transparent;
+    width: 20%;
+    height: 50%;
+}
+
+.room-two .black {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transform: rotate(3deg);
+    background-size: cover;
+    background-color: black;
+    width: 60%;
+    height: 50%;
+}
+
+.room-two .pad {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: lightgray;
+    width: 20%;
+    height: 40%;
+}
+
+.room-two .yellow {
+    position: absolute;
+    bottom: 20px;
+    right: 25%;
+    transform: rotate(-3deg);
+    background-color: yellow;
+    width: 30%;
+    height: 40%;
+}
+
+.room-two .green {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    transform: rotate(5deg);
+    background-color: green;
+    width: 40%;
+    height: 40%;
+}
