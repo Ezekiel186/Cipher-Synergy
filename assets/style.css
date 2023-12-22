@@ -201,6 +201,8 @@ footer img {
     transform: rotate(356deg);
 }
 
+/* clock */
+
 .room-one .red {
     position: absolute;
     top: 60px;
@@ -221,7 +223,6 @@ footer img {
     position: absolute;
     width: 700px;
     height: 700px;
-    transition: transform 0.5s ease-out;
 }
 
 .min, .hour {

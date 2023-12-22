@@ -98,21 +98,31 @@ player1.addEventListener('click', function() {
 
 // clock
 let rotationAnglemin = 0;
+let lastClickTimeMin = 0;
 
 document.querySelector('.min').addEventListener('click', function () {
-    rotationAnglemin += 30; 
-    document.querySelector('.rotatem').style.transform = `rotate(${rotationAnglemin}deg)`;
-    var clickSound = document.getElementById('clickSoundm');
-    clickSound.play();
+    const currentTime = new Date().getTime();
+    if (currentTime - lastClickTimeMin >= 600) {
+        rotationAnglemin = (rotationAnglemin + 30) % 360;
+        document.querySelector('.rotatem').style.transform = `rotate(${rotationAnglemin}deg)`;
+        var clickSound = document.getElementById('clickSoundm');
+        clickSound.play();
+        lastClickTimeMin = currentTime;
+    }
 });
 
 let rotationAnglehour = 0;
+let lastClickTimeHour = 0;
 
 document.querySelector('.hour').addEventListener('click', function () {
-    rotationAnglehour += 30; 
-    document.querySelector('.rotateh').style.transform = `rotate(${rotationAnglehour}deg)`;
-    var clickSound = document.getElementById('clickSoundh');
-    clickSound.play();
+    const currentTime = new Date().getTime();
+    if (currentTime - lastClickTimeHour >= 600) {
+        rotationAnglehour = (rotationAnglehour + 30) % 360;
+        document.querySelector('.rotateh').style.transform = `rotate(${rotationAnglehour}deg)`;
+        var clickSound = document.getElementById('clickSoundh');
+        clickSound.play();
+        lastClickTimeHour = currentTime;
+    }
 });
 
 // player 2 room
