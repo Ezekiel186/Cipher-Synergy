@@ -94,6 +94,8 @@ player1.addEventListener('click', function() {
     home.classList.add('hide');
     room1.classList.remove('hide');
     audio.play();
+    var clickSound = document.getElementById('player-select');
+    clickSound.play();
 });
 
 // clock
@@ -131,4 +133,6 @@ player2.addEventListener('click', function() {
     home.classList.add('hide');
     room2.classList.remove('hide');
     audio.play();
+    var clickSound = document.getElementById('player-select');
+    clickSound.play();
 });
