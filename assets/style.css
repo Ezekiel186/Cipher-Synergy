@@ -146,12 +146,6 @@ footer img {
     cursor: auto;
 }
 
-/* keep at bottom */
-
-.hide, audio {
-    display: none;
-}
-
 /* Room 1 */
 .room-one, .room-two {
     cursor: url('./images/cursor.png'), auto;
@@ -289,6 +283,8 @@ footer img {
     height: 40%;
 }
 
+/* combination */
+
 .room-two .green {
     position: absolute;
     bottom: 30px;
@@ -297,4 +293,50 @@ footer img {
     background-color: green;
     width: 40%;
     height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1 {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+.carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(26, 181, 26);
+}
+
+.carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4 {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+
+/* keep at bottom */
+
+.hide, audio {
+    display: none;
 }
