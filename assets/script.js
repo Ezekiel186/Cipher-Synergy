@@ -136,3 +136,149 @@ player2.addEventListener('click', function() {
     var clickSound = document.getElementById('player-select');
     clickSound.play();
 });
+
+// Combination Lock
+
+// lock 1
+
+let currentIndex1 = 0;
+const items1 = document.querySelectorAll('.option-container1 > div');
+
+function showCurrentColor1() {
+    items1.forEach((item, index) => {
+      if (index === currentIndex1) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor1() {
+    currentIndex1 = (currentIndex1 + 1) % items1.length;
+    showCurrentColor1();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor1();
+
+// lock 2
+
+let currentIndex2 = 0;
+const items2 = document.querySelectorAll('.option-container2 > div');
+
+function showCurrentColor2() {
+    items2.forEach((item, index) => {
+      if (index === currentIndex2) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor2() {
+    currentIndex2 = (currentIndex2 + 1) % items2.length;
+    showCurrentColor2();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor2();
+
+// lock 3
+
+let currentIndex3 = 0;
+const items3 = document.querySelectorAll('.option-container3 > div');
+
+function showCurrentColor3() {
+    items3.forEach((item, index) => {
+      if (index === currentIndex3) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor3() {
+    currentIndex3 = (currentIndex3 + 1) % items3.length;
+    showCurrentColor3();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor3();
+
+// lock 4
+
+let currentIndex4 = 0;
+const items4 = document.querySelectorAll('.option-container4 > div');
+
+function showCurrentColor4() {
+    items4.forEach((item, index) => {
+      if (index === currentIndex4) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor4() {
+    currentIndex4 = (currentIndex4 + 1) % items4.length;
+    showCurrentColor4();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor4();
+
+// lock 5
+
+let currentIndex5 = 0;
+const items5 = document.querySelectorAll('.option-container5 > div');
+
+function showCurrentColor5() {
+    items5.forEach((item, index) => {
+      if (index === currentIndex5) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor5() {
+    currentIndex5 = (currentIndex5 + 1) % items5.length;
+    showCurrentColor5();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor5();
+
+// lock 6
+
+let currentIndex6 = 0;
+const items6 = document.querySelectorAll('.option-container6 > div');
+
+function showCurrentColor6() {
+    items6.forEach((item, index) => {
+      if (index === currentIndex6) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+}
+
+function nextColor6() {
+    currentIndex6 = (currentIndex6 + 1) % items6.length;
+    showCurrentColor6();
+    var clickSound = document.getElementById('lock-change');
+    clickSound.play();
+}
+
+showCurrentColor6();

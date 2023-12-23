@@ -334,6 +334,69 @@ footer img {
     background-color: blue;
 }
 
+.Lock6, .Lock5, .Lock4, .Lock3, .Lock2, .Lock1 {
+    margin: 25px;
+}
+
+.Lock6 button, .Lock5 button, .Lock4 button, .Lock3 button, .Lock2 button, .Lock1 button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Lock 1 */
+.option-container1 {
+    overflow: hidden;
+}
+
+.carousel1-item1, .carousel1-item2, .carousel1-item3, .carousel1-item4, .carousel1-item5, .carousel1-item6 {
+    display: none;
+}
+
+/* lock 2 */
+.option-container2 {
+    overflow: hidden;
+}
+
+.carousel2-item1, .carousel2-item2, .carousel2-item3, .carousel2-item4, .carousel2-item5, .carousel2-item6 {
+    display: none;
+}
+
+/* lock 3 */
+.option-container3 {
+    overflow: hidden;
+}
+
+.carousel3-item1, .carousel3-item2, .carousel3-item3, .carousel3-item4, .carousel3-item5, .carousel3-item6 {
+    display: none;
+}
+
+/* lock 4 */
+.option-container4 {
+    overflow: hidden;
+}
+
+.carousel4-item1, .carousel4-item2, .carousel4-item3, .carousel4-item4, .carousel4-item5, .carousel4-item6 {
+    display: none;
+}
+
+/* Lock 5 */
+.option-container5 {
+    overflow: hidden;
+}
+
+.carousel5-item1, .carousel5-item2, .carousel5-item3, .carousel5-item4, .carousel5-item5, .carousel5-item6 {
+    display: none;
+}
+
+/* Lock 6 */
+.option-container6 {
+    overflow: hidden;
+}
+
+.carousel6-item1, .carousel6-item2, .carousel6-item3, .carousel6-item4, .carousel6-item5, .carousel6-item6 {
+    display: none;
+}
 
 /* keep at bottom */
 
