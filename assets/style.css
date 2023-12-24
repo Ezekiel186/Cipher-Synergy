@@ -240,7 +240,7 @@ footer img {
 
 .room-one .clock-hands {
     position: absolute;
-    width: 30%;
+    width: 500px;
     bottom: 60px;
     right: 90px;
 }
@@ -273,15 +273,15 @@ footer img {
     transform: rotate(-3deg);
     background-size: cover;
     background-image: url('./images/radio.png');
-    width: 50%;
-    height: 53%;
+    width: 900px;
+    height: 567px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .black button {
-    position: absolute;
+    position: relative;
     width: 46px;
     height: 46px;
     border: 0;
@@ -290,29 +290,44 @@ footer img {
     background-color: transparent;
 }
 
+.left-radio {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    left: -100px;
+}
+
+.right-radio {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    right: -170px;
+    bottom: -10px;
+}
+
 .black .btn-1 {
-    left: 125px;
-    bottom: 85px; 
+    margin-right: 20px;
+    bottom: 155px; 
     width: 60px;
     height: 60px;
 }
 
 .black .btn-2 {
-    left: 215px;
-    bottom: 90px;
+    bottom: 160px;
 }
 
 .black .btn-3 {
-    right: 215px;
-    bottom: 90px;
+    bottom: 165px;
 }
 
 .black .btn-4 {
-    right: 135px;
-    bottom: 85px;
+    margin-left: 20px;
+    bottom: 157px;
     width: 60px;
     height: 60px;
 }
+
+/* pad */
 
 .room-two .pad {
     position: absolute;
