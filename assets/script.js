@@ -156,6 +156,52 @@ player2.addEventListener('click', function() {
     clickSound.play();
 });
 
+// radio
+
+// button one
+
+let rotationAngleone = 0;
+
+document.querySelector('.btn-1').addEventListener('click', function () {
+        rotationAngleone = (rotationAngleone + 30) % 360;
+        document.querySelector('.btn-1').style.transform = `rotate(${rotationAngleone}deg)`;
+        var static = document.getElementById('static');
+        static.play();
+});
+
+// button two
+
+let rotationAngletwo = 0;
+
+document.querySelector('.btn-2').addEventListener('click', function () {
+        rotationAngletwo = (rotationAngletwo + 30) % 360;
+        document.querySelector('.btn-2').style.transform = `rotate(${rotationAngletwo}deg)`;
+        var static = document.getElementById('static');
+        static.play();
+});
+
+// button three
+
+let rotationAnglethree = 0;
+
+document.querySelector('.btn-3').addEventListener('click', function () {
+        rotationAnglethree = (rotationAnglethree + 30) % 360;
+        document.querySelector('.btn-3').style.transform = `rotate(${rotationAnglethree}deg)`;
+        var static = document.getElementById('static');
+        static.play();
+});
+
+// button four
+
+let rotationAnglefour = 0;
+
+document.querySelector('.btn-4').addEventListener('click', function () {
+        rotationAnglefour = (rotationAnglefour + 40) % 360;
+        document.querySelector('.btn-4').style.transform = `rotate(${rotationAnglefour}deg)`;
+        var static = document.getElementById('static');
+        static.play();
+});
+
 // Combination Lock
 
 // lock 1

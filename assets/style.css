@@ -265,6 +265,7 @@ footer img {
     height: 50%;
 }
 
+/* radio */
 .room-two .black {
     position: absolute;
     top: 20px;
@@ -281,13 +282,19 @@ footer img {
 
 .black button {
     position: absolute;
-    padding: 20px; 
+    width: 46px;
+    height: 46px;
     border: 0;
+    background-image: url('./images/radiobtn.png');
+    background-size: cover;
+    background-color: transparent;
 }
 
 .black .btn-1 {
     left: 125px;
-    bottom: 90px;
+    bottom: 85px; 
+    width: 60px;
+    height: 60px;
 }
 
 .black .btn-2 {
@@ -302,7 +309,9 @@ footer img {
 
 .black .btn-4 {
     right: 135px;
-    bottom: 90px;
+    bottom: 85px;
+    width: 60px;
+    height: 60px;
 }
 
 .room-two .pad {
