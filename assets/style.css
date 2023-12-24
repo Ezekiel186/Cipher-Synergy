@@ -302,39 +302,45 @@ footer img {
 }
 
 .carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: yellow;
+    background-image: url('./images/yellow.png');
+    background-size: cover;
 }
 
 .carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: orange;
+    background-image: url('./images/orange.png');
+    background-size: cover;
 }
 
 .carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: rgb(26, 181, 26);
+    background-image: url('./images/green.png');
+    background-size: cover;
 }
 
 .carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: black;
+    background-image: url('./images/black.png');
+    background-size: cover;
 }
 
 .carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: red;
+    background-image: url('./images/red.png');
+    background-size: cover;
 }
 
 .carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
-    height: 30px;
+    height: 35px;
     width: 20px;
-    background-color: blue;
+    background-image: url('./images/blue.png');
+    background-size: cover;
 }
 
 .Lock6, .Lock5, .Lock4, .Lock3, .Lock2, .Lock1 {
@@ -343,7 +349,10 @@ footer img {
 
 .Lock6 button, .Lock5 button, .Lock4 button, .Lock3 button, .Lock2 button, .Lock1 button {
     width: 20px;
-    height: 10px;
+    height: 50px;
+    position: absolute;
+    border: 0;
+    background-color: transparent;
 }
 
 /* Lock 1 */
@@ -408,7 +417,7 @@ footer img {
     justify-content: center;
     position: relative;
     left: -150px;
-    top: 35px;
+    top: 45px;
     padding: 20px;
     transform: rotate(1deg);
 }
@@ -421,7 +430,7 @@ footer img {
     justify-content: center;
     position: relative;
     right: -150px;
-    top: 38px;
+    top: 48px;
     padding: 20px;
 }
 
