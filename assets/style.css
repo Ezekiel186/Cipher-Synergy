@@ -214,7 +214,6 @@ footer img {
     position: absolute;
     top: 60px;
     right: 60px;
-    background-image: url('./images/clock.png');
     background-size: cover;
     background-color: transparent;
     border-radius: 50%;
@@ -256,9 +255,9 @@ footer img {
 
 .room-two .note {
     position: absolute;
-    top: 5px;
-    right: 40px;
-    transform: rotate(-7deg);
+    top: -50px;
+    left: 0px;
+    transform: rotate(-10deg);
     background-image: url('./images/note.png');
     background-size: cover;
     background-color: transparent;
@@ -269,18 +268,18 @@ footer img {
 .room-two .black {
     position: absolute;
     top: 40px;
-    left: 40px;
-    transform: rotate(3deg);
+    right: 40px;
+    transform: rotate(-3deg);
     background-size: cover;
     background-color: black;
-    width: 60%;
+    width: 50%;
     height: 50%;
 }
 
 .room-two .pad {
     position: absolute;
     bottom: 30px;
-    right: 40px;
+    right: 25%;
     background-color: lightgray;
     width: 20%;
     height: 40%;
@@ -289,8 +288,8 @@ footer img {
 .room-two .yellow {
     position: absolute;
     bottom: 20px;
-    right: 25%;
-    transform: rotate(-3deg);
+    right: 30px;
+    transform: rotate(3deg);
     background-color: yellow;
     width: 20%;
     height: 40%;

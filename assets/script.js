@@ -130,11 +130,16 @@ document.querySelector('.hour').addEventListener('click', function () {
 // checking clock
 
 function checkClock() {
+    var red = document.querySelector('.red');
+
     if (rotationAnglemin === 180 && rotationAnglehour === 0) {
         console.log('clockworks');
         clearInterval(clockChecker);
         var openedclock = document.getElementById('clock-open');
         openedclock.play();
+        red.style.backgroundImage = "url('./assets/images/no9.png')"
+    } else {
+       red.style.backgroundImage = "url('./assets/images/clock.png')"
     }
 }
 
