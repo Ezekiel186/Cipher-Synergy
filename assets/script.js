@@ -127,6 +127,20 @@ document.querySelector('.hour').addEventListener('click', function () {
     }
 });
 
+// checking clock
+
+function checkClock() {
+    if (rotationAnglehour === 180 && rotationAnglemin === 0) {
+        console.log('clockworks');
+        clearInterval(clockChecker);
+        var openedclock = document.getElementById('clock-open');
+        openedclock.play();
+    }
+}
+
+var clockChecker = setInterval(checkClock, 1000);
+
+
 // player 2 room
 
 player2.addEventListener('click', function() {
@@ -297,7 +311,7 @@ function checkCombination() {
         document.querySelector('.right-lock').style.display = 'none';
         var openedcase = document.getElementById('case-open');
         openedcase.play();
-        clearInterval(intervalId);
+        clearInterval(lockChecker);
     } else {
         console.log("no")
         briefcase.style.backgroundImage = 'url("./assets/images/closed.png")'
@@ -305,4 +319,4 @@ function checkCombination() {
     }
 }
 
-var intervalId = setInterval(checkCombination, 1000);
+var lockChecker = setInterval(checkCombination, 1000);

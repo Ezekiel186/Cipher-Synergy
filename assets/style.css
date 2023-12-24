@@ -1,5 +1,10 @@
 /* Home page */
 
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
 .home nav {
     background-color: black;
     position: fixed;
