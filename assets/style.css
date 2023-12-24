@@ -267,13 +267,42 @@ footer img {
 
 .room-two .black {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 20px;
     transform: rotate(-3deg);
     background-size: cover;
-    background-color: black;
+    background-image: url('./images/radio.png');
     width: 50%;
-    height: 50%;
+    height: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black button {
+    position: absolute;
+    padding: 20px; 
+    border: 0;
+}
+
+.black .btn-1 {
+    left: 125px;
+    bottom: 90px;
+}
+
+.black .btn-2 {
+    left: 215px;
+    bottom: 90px;
+}
+
+.black .btn-3 {
+    right: 215px;
+    bottom: 90px;
+}
+
+.black .btn-4 {
+    right: 135px;
+    bottom: 90px;
 }
 
 .room-two .pad {
