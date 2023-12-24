@@ -130,7 +130,7 @@ document.querySelector('.hour').addEventListener('click', function () {
 // checking clock
 
 function checkClock() {
-    if (rotationAnglehour === 180 && rotationAnglemin === 0) {
+    if (rotationAnglemin === 180 && rotationAnglehour === 0) {
         console.log('clockworks');
         clearInterval(clockChecker);
         var openedclock = document.getElementById('clock-open');
