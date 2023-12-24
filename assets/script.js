@@ -163,7 +163,7 @@ player2.addEventListener('click', function() {
 let rotationAngleone = 0;
 
 document.querySelector('.btn-1').addEventListener('click', function () {
-        rotationAngleone = (rotationAngleone + 30) % 360;
+        rotationAngleone = (rotationAngleone + 45) % 360;
         document.querySelector('.btn-1').style.transform = `rotate(${rotationAngleone}deg)`;
         var static = document.getElementById('static');
         static.play();
@@ -174,7 +174,7 @@ document.querySelector('.btn-1').addEventListener('click', function () {
 let rotationAngletwo = 0;
 
 document.querySelector('.btn-2').addEventListener('click', function () {
-        rotationAngletwo = (rotationAngletwo + 30) % 360;
+        rotationAngletwo = (rotationAngletwo + 45) % 360;
         document.querySelector('.btn-2').style.transform = `rotate(${rotationAngletwo}deg)`;
         var static = document.getElementById('static');
         static.play();
@@ -185,7 +185,7 @@ document.querySelector('.btn-2').addEventListener('click', function () {
 let rotationAnglethree = 0;
 
 document.querySelector('.btn-3').addEventListener('click', function () {
-        rotationAnglethree = (rotationAnglethree + 30) % 360;
+        rotationAnglethree = (rotationAnglethree + 45) % 360;
         document.querySelector('.btn-3').style.transform = `rotate(${rotationAnglethree}deg)`;
         var static = document.getElementById('static');
         static.play();
@@ -196,11 +196,23 @@ document.querySelector('.btn-3').addEventListener('click', function () {
 let rotationAnglefour = 0;
 
 document.querySelector('.btn-4').addEventListener('click', function () {
-        rotationAnglefour = (rotationAnglefour + 40) % 360;
+        rotationAnglefour = (rotationAnglefour + 45) % 360;
         document.querySelector('.btn-4').style.transform = `rotate(${rotationAnglefour}deg)`;
         var static = document.getElementById('static');
         static.play();
 });
+
+// checking radio
+
+function checkRadio() {
+    if (rotationAngleone === 0 && rotationAngletwo === 90 && rotationAnglethree === 135 && rotationAnglefour === 45) {
+        clearInterval(radioChecker);
+        var openedclock = document.getElementById('clock-open');
+        openedclock.play();
+    }
+}
+
+var radioChecker = setInterval(checkRadio, 1000);
 
 // Combination Lock
 
