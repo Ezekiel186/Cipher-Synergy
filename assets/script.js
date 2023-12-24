@@ -99,7 +99,7 @@ player1.addEventListener('click', function() {
 });
 
 // clock
-let rotationAnglemin = 0;
+let rotationAnglemin = 240;
 let lastClickTimeMin = 0;
 
 document.querySelector('.min').addEventListener('click', function () {
@@ -113,7 +113,7 @@ document.querySelector('.min').addEventListener('click', function () {
     }
 });
 
-let rotationAnglehour = 0;
+let rotationAnglehour = 120;
 let lastClickTimeHour = 0;
 
 document.querySelector('.hour').addEventListener('click', function () {

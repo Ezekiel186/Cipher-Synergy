@@ -197,6 +197,14 @@ footer img {
 
 /* clock */
 
+.rotateh {
+    transform: rotate(120deg);
+}
+
+.rotatem {
+    transform: rotate(240deg);
+}
+
 .room-one .red {
     position: absolute;
     top: 60px;
