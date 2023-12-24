@@ -282,3 +282,27 @@ function nextColor6() {
 }
 
 showCurrentColor6();
+
+// checking lock 
+
+function checkCombination() {
+    console.log(currentIndex1, currentIndex2, currentIndex3, currentIndex4, currentIndex5, currentIndex6);
+    var briefcase = document.querySelector('.green');
+
+    if (currentIndex1 === 3 && currentIndex2 === 5 && currentIndex3 === 2 && currentIndex4 === 0 && currentIndex5 === 4 && currentIndex6 === 1) {
+        console.log("yes");
+        briefcase.style.backgroundImage = 'url("./assets/images/opened.png")'
+        briefcase.style.height = '778px';
+        document.querySelector('.left-lock').style.display = 'none';
+        document.querySelector('.right-lock').style.display = 'none';
+        var openedcase = document.getElementById('case-open');
+        openedcase.play();
+        clearInterval(intervalId);
+    } else {
+        console.log("no")
+        briefcase.style.backgroundImage = 'url("./assets/images/closed.png")'
+        briefcase.style.height = '378px';
+    }
+}
+
+var intervalId = setInterval(checkCombination, 1000);

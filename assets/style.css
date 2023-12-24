@@ -290,13 +290,10 @@ footer img {
     bottom: 30px;
     left: 25px;
     transform: rotate(5deg);
-    background-color: green;
     width: 894px;
-    height: 378px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/closed.png');
     background-size: cover;
     background-color: transparent;
 }
