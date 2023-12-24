@@ -279,7 +279,7 @@ footer img {
     right: 25%;
     transform: rotate(-3deg);
     background-color: yellow;
-    width: 30%;
+    width: 20%;
     height: 40%;
 }
 
@@ -291,57 +291,59 @@ footer img {
     left: 25px;
     transform: rotate(5deg);
     background-color: green;
-    width: 40%;
-    height: 40%;
+    width: 894px;
+    height: 378px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('./images/closed.png');
+    background-size: cover;
+    background-color: transparent;
 }
 
 .carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: yellow;
 }
 
 .carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: orange;
 }
 
 .carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: rgb(26, 181, 26);
 }
 
 .carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: black;
 }
 
 .carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: red;
 }
 
 .carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
     background-color: blue;
 }
 
 .Lock6, .Lock5, .Lock4, .Lock3, .Lock2, .Lock1 {
-    margin: 25px;
+    margin: 5px;
 }
 
 .Lock6 button, .Lock5 button, .Lock4 button, .Lock3 button, .Lock2 button, .Lock1 button {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    width: 20px;
+    height: 10px;
 }
 
 /* Lock 1 */
@@ -396,6 +398,31 @@ footer img {
 
 .carousel6-item1, .carousel6-item2, .carousel6-item3, .carousel6-item4, .carousel6-item5, .carousel6-item6 {
     display: none;
+}
+
+.left-lock {
+    cursor: auto;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -150px;
+    top: 35px;
+    padding: 20px;
+    transform: rotate(1deg);
+}
+
+.right-lock { 
+    cursor: auto;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: -150px;
+    top: 38px;
+    padding: 20px;
 }
 
 /* keep at bottom */
