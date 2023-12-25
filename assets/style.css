@@ -159,27 +159,53 @@ footer img {
     background-size: cover;
 }
 
+/* note */
+
 .room-one .blue {
     position: absolute;
     top: 30px;
     left: 50px;
-    width: 600px;
-    height: 416px;
+    width: 480px;
+    height: 333px;
     transform: rotate(-10deg);
     background-image: url('./images/letter.png');
     background-size: cover;
     background-color: transparent;
 }
 
+/* globe */
+
 .room-one .purple {
     position: absolute;
-    bottom: 10px;
-    left: 60px;
-    background-color: purple;
-    width: 30%;
-    height: 40%;
+    bottom: 5px;
+    left: 20px;
+    width: 570px;
+    height: 570px;
     transform: rotate(4deg);
 }
+
+.purple .globe {
+    background-image: url('./images/globe.png');
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    width: 570px;
+    height: 570px;
+    z-index: 1;
+}
+
+.purple .frame {
+    position: absolute;
+    background-image: url('./images/globeFrame.png');
+    background-size: cover;
+    background-color: transparent;
+    width: 570px;
+    height: 570px;
+    z-index: 2;
+    perspective: 1000px;
+}
+
+/* pad */
 
 .room-one .white {
     position: absolute;
@@ -434,7 +460,7 @@ footer img {
     position: absolute;
     bottom: 30px;
     left: 25px;
-    transform: rotate(-5deg);
+    transform: rotate(5deg);
     width: 894px;
     display: flex;
     justify-content: center;
