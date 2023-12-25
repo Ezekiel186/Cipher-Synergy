@@ -176,7 +176,7 @@ let rotationAngletwo = 0;
 document.querySelector('.btn-2').addEventListener('click', function () {
         rotationAngletwo = (rotationAngletwo + 45) % 360;
         document.querySelector('.btn-2').style.transform = `rotate(${rotationAngletwo}deg)`;
-        var static = document.getElementById('static');
+        var static = document.getElementById('static2');
         static.play();
 });
 
@@ -187,7 +187,7 @@ let rotationAnglethree = 0;
 document.querySelector('.btn-3').addEventListener('click', function () {
         rotationAnglethree = (rotationAnglethree + 45) % 360;
         document.querySelector('.btn-3').style.transform = `rotate(${rotationAnglethree}deg)`;
-        var static = document.getElementById('static');
+        var static = document.getElementById('static3');
         static.play();
 });
 
@@ -198,7 +198,7 @@ let rotationAnglefour = 0;
 document.querySelector('.btn-4').addEventListener('click', function () {
         rotationAnglefour = (rotationAnglefour + 45) % 360;
         document.querySelector('.btn-4').style.transform = `rotate(${rotationAnglefour}deg)`;
-        var static = document.getElementById('static');
+        var static = document.getElementById('static4');
         static.play();
 });
 
