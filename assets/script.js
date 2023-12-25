@@ -204,15 +204,31 @@ document.querySelector('.btn-4').addEventListener('click', function () {
 
 // checking radio
 
+let replayWorks = false
+
 function checkRadio() {
     if (rotationAngleone === 0 && rotationAngletwo === 90 && rotationAnglethree === 135 && rotationAnglefour === 45) {
         clearInterval(radioChecker);
-        var openedclock = document.getElementById('clock-open');
-        openedclock.play();
+        var radioClue = document.getElementById('radio');
+        radioClue.play();
+        replayWorks = true
     }
 }
 
 var radioChecker = setInterval(checkRadio, 1000);
+
+// radio replay
+
+document.querySelector('.replay').addEventListener('click', function() {
+    var replayClick = document.getElementById('replayClick');
+    replayClick.play();
+
+    if (replayWorks === true) {
+        var radioClue = document.getElementById('radio');
+        radioClue.play();
+    }
+});
+
 
 // Combination Lock
 

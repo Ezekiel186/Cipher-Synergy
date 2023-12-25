@@ -266,9 +266,10 @@ footer img {
 }
 
 /* radio */
+
 .room-two .black {
     position: absolute;
-    top: 20px;
+    top: -10px;
     right: 20px;
     transform: rotate(-3deg);
     background-size: cover;
@@ -288,6 +289,15 @@ footer img {
     background-image: url('./images/radiobtn.png');
     background-size: cover;
     background-color: transparent;
+}
+
+.black .replay {
+    width: 47px;
+    height: 25px;
+    background-image: url('./images/replay.png');
+    position: absolute;
+    bottom: 202px;
+    right: 100px;
 }
 
 .left-radio {
