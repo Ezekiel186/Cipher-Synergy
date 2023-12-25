@@ -170,7 +170,7 @@ function stopGlobe() {
 // checking globe
 
 function checkGlobe() {
-    if (rotationAngleGlobe === 210 || rotationAngleGlobe === 420 || rotationAngleGlobe === 630) {
+    if (rotationAngleGlobe === 210 || rotationAngleGlobe === 420 || rotationAngleGlobe === 570 || rotationAngleGlobe === 630 || rotationAngleGlobe === 780 || rotationAngleGlobe === 930) {
         var openedclock = document.getElementById('clock-open');
         openedclock.play();
     }
