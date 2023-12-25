@@ -268,126 +268,6 @@ document.querySelector('.replay').addEventListener('click', function() {
     }
 });
 
-// frame
-
-// top left
-let rotationAngleArrowOne = 90;
-
-document.querySelector('.arone').addEventListener('click', function () {
-        rotationAngleArrowOne = (rotationAngleArrowOne + 90) % 360;
-        document.querySelector('.arone').style.transform = `rotate(${rotationAngleArrowOne}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// top mid
-let rotationAngleArrowTwo = 0;
-
-document.querySelector('.artwo').addEventListener('click', function () {
-        rotationAngleArrowTwo = (rotationAngleArrowTwo + 90) % 360;
-        document.querySelector('.artwo').style.transform = `rotate(${rotationAngleArrowTwo}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// top right
-let rotationAngleArrowThree = 180;
-
-document.querySelector('.arthree').addEventListener('click', function () {
-        rotationAngleArrowThree = (rotationAngleArrowThree + 90) % 360;
-        document.querySelector('.arthree').style.transform = `rotate(${rotationAngleArrowThree}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// mid left
-let rotationAngleArrowFour = 90;
-
-document.querySelector('.arfour').addEventListener('click', function () {
-        rotationAngleArrowFour = (rotationAngleArrowFour + -90) % 360;
-        document.querySelector('.arfour').style.transform = `rotate(${rotationAngleArrowFour}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// mid mid
-let rotationAngleArrowFive = 270;
-
-document.querySelector('.arfive').addEventListener('click', function () {
-        rotationAngleArrowFive = (rotationAngleArrowFive + -90) % 360;
-        document.querySelector('.arfive').style.transform = `rotate(${rotationAngleArrowFive}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// mid right
-let rotationAngleArrowSix = 0;
-
-document.querySelector('.arsix').addEventListener('click', function () {
-        rotationAngleArrowSix = (rotationAngleArrowSix + -90) % 360;
-        document.querySelector('.arsix').style.transform = `rotate(${rotationAngleArrowSix}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// bot left
-let rotationAngleArrowSeven = 0;
-
-document.querySelector('.arseven').addEventListener('click', function () {
-        rotationAngleArrowSeven = (rotationAngleArrowSeven + 90) % 360;
-        document.querySelector('.arseven').style.transform = `rotate(${rotationAngleArrowSeven}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// bot mid
-let rotationAngleArrowEight = 270;
-
-document.querySelector('.areight').addEventListener('click', function () {
-        rotationAngleArrowEight = (rotationAngleArrowEight + 90) % 360;
-        document.querySelector('.areight').style.transform = `rotate(${rotationAngleArrowEight}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// bot right
-let rotationAngleArrowNine = 180;
-
-document.querySelector('.arnine').addEventListener('click', function () {
-        rotationAngleArrowNine = (rotationAngleArrowNine + 90) % 360;
-        document.querySelector('.arnine').style.transform = `rotate(${rotationAngleArrowNine}deg)`;
-        var wood = document.getElementById('wood');
-        wood.currentTime = 0;
-        wood.play();
-});
-
-// checking frame
-
-function checkFrame() {
-    var yellow = document.querySelector('.yellow');
-    if (rotationAngleArrowOne === 180 && rotationAngleArrowTwo === 90 && rotationAngleArrowThree === 270 && rotationAngleArrowFour === -90 && rotationAngleArrowFive === 0 && rotationAngleArrowSix === -180 && rotationAngleArrowSeven === 270 && rotationAngleArrowEight === 0 && rotationAngleArrowNine === 270) {
-        clearInterval(frameChecker);
-        var solvedFrame = document.getElementById('pieces');
-        solvedFrame.play();
-        document.querySelector('.top').style.display = 'none';
-        document.querySelector('.mid').style.display = 'none';
-        document.querySelector('.bot').style.display = 'none';
-        yellow.style.backgroundImage = "url('./assets/images/frameEnd.png')"
-    } else {
-       yellow.style.backgroundImage = "url('./assets/images/frame.png')"
-    }
-}
-
-var frameChecker = setInterval(checkFrame, 1000);
-
 // Combination Lock
 
 // lock 1
@@ -541,6 +421,7 @@ function nextColor6() {
 showCurrentColor6();
 
 // checking lock 
+let scatter;
 
 function checkCombination() {
     console.log(currentIndex1, currentIndex2, currentIndex3, currentIndex4, currentIndex5, currentIndex6);
@@ -555,6 +436,7 @@ function checkCombination() {
         var openedcase = document.getElementById('case-open');
         openedcase.play();
         clearInterval(lockChecker);
+        scatter = true;
     } else {
         console.log("no")
         briefcase.style.backgroundImage = 'url("./assets/images/closed.png")'
@@ -563,3 +445,127 @@ function checkCombination() {
 }
 
 var lockChecker = setInterval(checkCombination, 1000);
+
+// frame
+
+// top left
+let rotationAngleArrowOne = 90;
+
+document.querySelector('.arone').addEventListener('click', function () {
+        rotationAngleArrowOne = (rotationAngleArrowOne + 90) % 360;
+        document.querySelector('.arone').style.transform = `rotate(${rotationAngleArrowOne}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// top mid
+let rotationAngleArrowTwo = 0;
+
+document.querySelector('.artwo').addEventListener('click', function () {
+        rotationAngleArrowTwo = (rotationAngleArrowTwo + 90) % 360;
+        document.querySelector('.artwo').style.transform = `rotate(${rotationAngleArrowTwo}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// top right
+let rotationAngleArrowThree = 180;
+
+document.querySelector('.arthree').addEventListener('click', function () {
+        rotationAngleArrowThree = (rotationAngleArrowThree + 90) % 360;
+        document.querySelector('.arthree').style.transform = `rotate(${rotationAngleArrowThree}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// mid left
+let rotationAngleArrowFour = 90;
+
+document.querySelector('.arfour').addEventListener('click', function () {
+        rotationAngleArrowFour = (rotationAngleArrowFour + -90) % 360;
+        document.querySelector('.arfour').style.transform = `rotate(${rotationAngleArrowFour}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// mid mid
+let rotationAngleArrowFive = 270;
+
+document.querySelector('.arfive').addEventListener('click', function () {
+        rotationAngleArrowFive = (rotationAngleArrowFive + -90) % 360;
+        document.querySelector('.arfive').style.transform = `rotate(${rotationAngleArrowFive}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// mid right
+let rotationAngleArrowSix = 0;
+
+document.querySelector('.arsix').addEventListener('click', function () {
+        rotationAngleArrowSix = (rotationAngleArrowSix + -90) % 360;
+        document.querySelector('.arsix').style.transform = `rotate(${rotationAngleArrowSix}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// bot left
+let rotationAngleArrowSeven = 0;
+
+document.querySelector('.arseven').addEventListener('click', function () {
+        rotationAngleArrowSeven = (rotationAngleArrowSeven + 90) % 360;
+        document.querySelector('.arseven').style.transform = `rotate(${rotationAngleArrowSeven}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// bot mid
+let rotationAngleArrowEight = 270;
+
+document.querySelector('.areight').addEventListener('click', function () {
+        rotationAngleArrowEight = (rotationAngleArrowEight + 90) % 360;
+        document.querySelector('.areight').style.transform = `rotate(${rotationAngleArrowEight}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// bot right
+let rotationAngleArrowNine = 180;
+
+document.querySelector('.arnine').addEventListener('click', function () {
+        rotationAngleArrowNine = (rotationAngleArrowNine + 90) % 360;
+        document.querySelector('.arnine').style.transform = `rotate(${rotationAngleArrowNine}deg)`;
+        var wood = document.getElementById('wood');
+        wood.currentTime = 0;
+        wood.play();
+});
+
+// checking frame
+
+function checkFrame() {
+    var yellow = document.querySelector('.yellow');
+    if (rotationAngleArrowOne === 180 && rotationAngleArrowTwo === 90 && rotationAngleArrowThree === 270 && rotationAngleArrowFour === -90 && rotationAngleArrowFive === 0 && rotationAngleArrowSix === -180 && rotationAngleArrowSeven === 270 && rotationAngleArrowEight === 0 && rotationAngleArrowNine === 270) {
+        clearInterval(frameChecker);
+        var solvedFrame = document.getElementById('pieces');
+        solvedFrame.play();
+        document.querySelector('.top').style.display = 'none';
+        document.querySelector('.mid').style.display = 'none';
+        document.querySelector('.bot').style.display = 'none';
+        yellow.style.backgroundImage = "url('./assets/images/frameEnd.png')"
+        if (scatter === true) {
+            document.querySelector('.green').style.backgroundImage = "url('./assets/images/scattered.png')"           
+        }
+        scatter = false;
+    } else {
+       yellow.style.backgroundImage = "url('./assets/images/frame.png')"
+    }
+}
+
+var frameChecker = setInterval(checkFrame, 1000);
