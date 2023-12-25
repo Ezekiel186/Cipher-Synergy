@@ -100,31 +100,24 @@ player1.addEventListener('click', function() {
 
 // clock
 let rotationAnglemin = 240;
-let lastClickTimeMin = 0;
+
 
 document.querySelector('.min').addEventListener('click', function () {
-    const currentTime = new Date().getTime();
-    if (currentTime - lastClickTimeMin >= 600) {
         rotationAnglemin = (rotationAnglemin + 30) % 360;
         document.querySelector('.rotatem').style.transform = `rotate(${rotationAnglemin}deg)`;
         var clickSound = document.getElementById('clickSoundm');
-        clickSound.play();
-        lastClickTimeMin = currentTime;
-    }
+        clickSound.currentTime = 0;
+        clickSound.play() 
 });
 
 let rotationAnglehour = 120;
-let lastClickTimeHour = 0;
 
 document.querySelector('.hour').addEventListener('click', function () {
-    const currentTime = new Date().getTime();
-    if (currentTime - lastClickTimeHour >= 600) {
         rotationAnglehour = (rotationAnglehour + 30) % 360;
         document.querySelector('.rotateh').style.transform = `rotate(${rotationAnglehour}deg)`;
         var clickSound = document.getElementById('clickSoundh');
+        clickSound.currentTime = 0;
         clickSound.play();
-        lastClickTimeHour = currentTime;
-    }
 });
 
 // checking clock
@@ -166,6 +159,7 @@ document.querySelector('.btn-1').addEventListener('click', function () {
         rotationAngleone = (rotationAngleone + 45) % 360;
         document.querySelector('.btn-1').style.transform = `rotate(${rotationAngleone}deg)`;
         var static = document.getElementById('static');
+        static.currentTime = 0;
         static.play();
 });
 
@@ -177,6 +171,7 @@ document.querySelector('.btn-2').addEventListener('click', function () {
         rotationAngletwo = (rotationAngletwo + 45) % 360;
         document.querySelector('.btn-2').style.transform = `rotate(${rotationAngletwo}deg)`;
         var static = document.getElementById('static2');
+        static.currentTime = 0;
         static.play();
 });
 
@@ -188,6 +183,7 @@ document.querySelector('.btn-3').addEventListener('click', function () {
         rotationAnglethree = (rotationAnglethree + 45) % 360;
         document.querySelector('.btn-3').style.transform = `rotate(${rotationAnglethree}deg)`;
         var static = document.getElementById('static3');
+        static.currentTime = 0;
         static.play();
 });
 
@@ -199,6 +195,7 @@ document.querySelector('.btn-4').addEventListener('click', function () {
         rotationAnglefour = (rotationAnglefour + 45) % 360;
         document.querySelector('.btn-4').style.transform = `rotate(${rotationAnglefour}deg)`;
         var static = document.getElementById('static4');
+        static.currentTime = 0;
         static.play();
 });
 
@@ -221,10 +218,12 @@ var radioChecker = setInterval(checkRadio, 1000);
 
 document.querySelector('.replay').addEventListener('click', function() {
     var replayClick = document.getElementById('replayClick');
+    replayClick.currentTime = 0;
     replayClick.play();
 
     if (replayWorks === true) {
         var radioClue = document.getElementById('radio');
+        radioClue.currentTime = 0;
         radioClue.play();
     }
 });
@@ -251,6 +250,7 @@ function nextColor1() {
     currentIndex1 = (currentIndex1 + 1) % items1.length;
     showCurrentColor1();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
@@ -275,6 +275,7 @@ function nextColor2() {
     currentIndex2 = (currentIndex2 + 1) % items2.length;
     showCurrentColor2();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
@@ -299,6 +300,7 @@ function nextColor3() {
     currentIndex3 = (currentIndex3 + 1) % items3.length;
     showCurrentColor3();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
@@ -323,6 +325,7 @@ function nextColor4() {
     currentIndex4 = (currentIndex4 + 1) % items4.length;
     showCurrentColor4();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
@@ -347,6 +350,7 @@ function nextColor5() {
     currentIndex5 = (currentIndex5 + 1) % items5.length;
     showCurrentColor5();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
@@ -371,6 +375,7 @@ function nextColor6() {
     currentIndex6 = (currentIndex6 + 1) % items6.length;
     showCurrentColor6();
     var clickSound = document.getElementById('lock-change');
+    clickSound.currentTime = 0;
     clickSound.play();
 }
 
