@@ -144,7 +144,7 @@ let rotationAngleGlobe = 0;
 let intervalId;
 
 function addAngle() {
-    rotationAngleGlobe = (rotationAngleGlobe + 10)
+    rotationAngleGlobe = (rotationAngleGlobe + 15) % 1080;
     document.querySelector('.globe').style.transform = `rotate(${rotationAngleGlobe}deg)`;
 }
 
@@ -154,7 +154,6 @@ function startGlobe() {
     if (!intervalId) {
         intervalId = setInterval(addAngle, 100);
         spin.currentTime = 0;
-        spin.loop = true;
         spin.play();
     }
 }
@@ -167,6 +166,18 @@ function stopGlobe() {
         intervalId = null;
     }
 }
+
+// checking globe
+
+function checkGlobe() {
+    if (rotationAngleGlobe === 210 || rotationAngleGlobe === 420 || rotationAngleGlobe === 630) {
+        var openedclock = document.getElementById('clock-open');
+        openedclock.play();
+    }
+}
+
+
+
 
 // player 2 room
 
