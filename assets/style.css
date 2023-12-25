@@ -176,6 +176,7 @@ footer img {
 /* globe */
 
 .room-one .purple {
+    cursor: url('./images/spin.png'), auto;
     position: absolute;
     bottom: 5px;
     left: 20px;
@@ -192,6 +193,7 @@ footer img {
     width: 570px;
     height: 570px;
     z-index: 1;
+    transition: transform 0.5s linear;
 }
 
 .purple .frame {
@@ -202,7 +204,6 @@ footer img {
     width: 570px;
     height: 570px;
     z-index: 2;
-    perspective: 1000px;
 }
 
 /* pad */

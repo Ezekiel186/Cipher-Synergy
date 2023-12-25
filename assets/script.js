@@ -138,6 +138,35 @@ function checkClock() {
 
 var clockChecker = setInterval(checkClock, 1000);
 
+// Globe
+
+let rotationAngleGlobe = 0;
+let intervalId;
+
+function addAngle() {
+    rotationAngleGlobe = (rotationAngleGlobe + 10)
+    document.querySelector('.globe').style.transform = `rotate(${rotationAngleGlobe}deg)`;
+}
+
+var spin = document.getElementById('rolling');
+
+function startGlobe() {
+    if (!intervalId) {
+        intervalId = setInterval(addAngle, 100);
+        spin.currentTime = 0;
+        spin.loop = true;
+        spin.play();
+    }
+}
+
+function stopGlobe() {
+    spin.pause();
+    spin.currentTime = 0;
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+}
 
 // player 2 room
 

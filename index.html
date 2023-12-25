@@ -54,9 +54,9 @@
     <!-- Room One -->
     <div class="room-one hide">
         <div class="blue"></div>
-        <div class="purple">
+        <div class="purple"  onmouseover="startGlobe()" onmouseleave="stopGlobe()">
             <div class="frame"></div>
-            <button class="globe"></button>
+            <div class="globe"></div>
         </div>
         <div class="white"></div>
         <div class="teal"></div>
@@ -185,6 +185,7 @@
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
         </div>
     </div>   
+    <audio id="rolling" src="./assets/Music/spinning.mp4"></audio>
     <audio id="wood" src="./assets/Music/woodturn2.1.mp4"></audio>
     <audio id="replayClick" src="./assets/Music/mixkit-clear-mouse-clicks-2997.wav"></audio>
     <audio id="radio" src="./assets/Music/mixkit-broken-radio-frequency-signal-2563.wav"></audio>
