@@ -185,7 +185,8 @@ footer img {
     position: absolute;
     bottom: 30px;
     left: 40%;
-    background-color: lightgray;
+    background-image: url('./images/pad.png');
+    background-size: cover;
     width: 20%;
     height: 40%;
 }
@@ -338,8 +339,9 @@ footer img {
 .room-two .pad {
     position: absolute;
     bottom: 30px;
-    right: 25%;
-    background-color: lightgray;
+    right: 25px;
+    background-image: url('./images/pad.png');
+    background-size: cover;
     width: 20%;
     height: 40%;
 }
@@ -349,7 +351,7 @@ footer img {
 .room-two .yellow {
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 22%;
     transform: rotate(3deg);
     background-image: url('./images/frame.png');
     background-size: cover;
@@ -432,7 +434,7 @@ footer img {
     position: absolute;
     bottom: 30px;
     left: 25px;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
     width: 894px;
     display: flex;
     justify-content: center;
