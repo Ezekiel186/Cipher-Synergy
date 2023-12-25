@@ -372,11 +372,17 @@ document.querySelector('.arnine').addEventListener('click', function () {
 // checking frame
 
 function checkFrame() {
+    var yellow = document.querySelector('.yellow');
     if (rotationAngleArrowOne === 180 && rotationAngleArrowTwo === 90 && rotationAngleArrowThree === 270 && rotationAngleArrowFour === -90 && rotationAngleArrowFive === 0 && rotationAngleArrowSix === -180 && rotationAngleArrowSeven === 270 && rotationAngleArrowEight === 0 && rotationAngleArrowNine === 270) {
-        console.log('frameworks')
-        var frameUnlock = document.getElementById('clock-open');
-        frameUnlock.play();
         clearInterval(frameChecker);
+        var solvedFrame = document.getElementById('pieces');
+        solvedFrame.play();
+        document.querySelector('.top').style.display = 'none';
+        document.querySelector('.mid').style.display = 'none';
+        document.querySelector('.bot').style.display = 'none';
+        yellow.style.backgroundImage = "url('./assets/images/frameEnd.png')"
+    } else {
+       yellow.style.backgroundImage = "url('./assets/images/frame.png')"
     }
 }
 
