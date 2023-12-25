@@ -153,7 +153,7 @@ player2.addEventListener('click', function() {
 
 // button one
 
-let rotationAngleone = 0;
+let rotationAngleone = 135;
 
 document.querySelector('.btn-1').addEventListener('click', function () {
         rotationAngleone = (rotationAngleone + 45) % 360;
@@ -165,7 +165,7 @@ document.querySelector('.btn-1').addEventListener('click', function () {
 
 // button two
 
-let rotationAngletwo = 0;
+let rotationAngletwo = 45;
 
 document.querySelector('.btn-2').addEventListener('click', function () {
         rotationAngletwo = (rotationAngletwo + 45) % 360;
@@ -177,7 +177,7 @@ document.querySelector('.btn-2').addEventListener('click', function () {
 
 // button three
 
-let rotationAnglethree = 0;
+let rotationAnglethree = 90;
 
 document.querySelector('.btn-3').addEventListener('click', function () {
         rotationAnglethree = (rotationAnglethree + 45) % 360;
@@ -328,6 +328,19 @@ document.querySelector('.arnine').addEventListener('click', function () {
         wood.currentTime = 0;
         wood.play();
 });
+
+// checking frame
+
+function checkFrame() {
+    if (rotationAngleArrowOne === 180 && rotationAngleArrowTwo === 90 && rotationAngleArrowThree === 270 && rotationAngleArrowFour === -90 && rotationAngleArrowFive === 0 && rotationAngleArrowSix === -180 && rotationAngleArrowSeven === 270 && rotationAngleArrowEight === 0 && rotationAngleArrowNine === 270) {
+        console.log('frameworks')
+        var frameUnlock = document.getElementById('clock-open');
+        frameUnlock.play();
+        clearInterval(frameChecker);
+    }
+}
+
+var frameChecker = setInterval(checkFrame, 1000);
 
 // Combination Lock
 

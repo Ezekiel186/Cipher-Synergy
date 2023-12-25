@@ -253,16 +253,9 @@ footer img {
 
 /* player 2 */
 
-.room-two .note {
-    position: absolute;
-    top: -50px;
-    left: 0px;
-    transform: rotate(-10deg);
-    background-image: url('./images/note.png');
+.room-two {
+    background-image: url('./images/background2.png');
     background-size: cover;
-    background-color: transparent;
-    width: 20%;
-    height: 50%;
 }
 
 /* radio */
@@ -316,6 +309,7 @@ footer img {
 }
 
 .black .btn-1 {
+    transform: rotate(135deg);
     margin-right: 20px;
     bottom: 155px; 
     width: 60px;
@@ -323,10 +317,12 @@ footer img {
 }
 
 .black .btn-2 {
+    transform: rotate(45deg);
     bottom: 160px;
 }
 
 .black .btn-3 {
+    transform: rotate(90deg);
     bottom: 165px;
 }
 
