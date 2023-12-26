@@ -53,8 +53,6 @@
     </div>
     <!-- Room One -->
     <div class="room-one hide">
-        <!-- Note -->
-        <div class="blue"></div>
         <!-- Globe -->
         <div class="purple"  onmouseover="startGlobe()" onmouseleave="stopGlobe()">
             <div class="frame"></div>
@@ -79,7 +77,6 @@
     </div>
     <!-- Room Two -->
     <div class="room-two hide">
-        <div class="note"></div>
         <!-- radio -->
         <div class="black">
             <div class="left-radio">
@@ -189,7 +186,9 @@
             Volume
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
         </div>
-    </div>   
+    </div>
+    <audio id="light" src="./assets/Music/light-switch-81967.mp3"></audio>
+    <audio id="globeClick" src="./assets/Music/thump.mp4"></audio>   
     <audio id="pieces" src="./assets/Music/handfull-of-poker-chips-95810.mp3"></audio>
     <audio id="rolling" src="./assets/Music/spin.mp3"></audio>
     <audio id="wood" src="./assets/Music/woodturn2.1.mp4"></audio>

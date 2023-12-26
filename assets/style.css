@@ -159,20 +159,6 @@ footer img {
     background-size: cover;
 }
 
-/* note */
-
-.room-one .blue {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    width: 480px;
-    height: 333px;
-    transform: rotate(-10deg);
-    background-image: url('./images/letter.png');
-    background-size: cover;
-    background-color: transparent;
-}
-
 /* globe */
 
 .room-one .purple {

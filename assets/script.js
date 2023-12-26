@@ -142,6 +142,7 @@ var clockChecker = setInterval(checkClock, 1000);
 
 let rotationAngleGlobe = 0;
 let intervalId;
+let solved = false;
 
 function addAngle() {
     rotationAngleGlobe = (rotationAngleGlobe + 15) % 1080;
@@ -151,11 +152,14 @@ function addAngle() {
 var spin = document.getElementById('rolling');
 
 function startGlobe() {
-    if (!intervalId) {
+    if (solved === false) {
+        if (!intervalId) {
         intervalId = setInterval(addAngle, 100);
         spin.currentTime = 0;
         spin.play();
     }
+}
+    
 }
 
 function stopGlobe() {
@@ -170,9 +174,17 @@ function stopGlobe() {
 // checking globe
 
 function checkGlobe() {
+    var globeClick = document.getElementById('globeClick');
+        globeClick.currentTime = 0;
+        globeClick.play();
+
     if (rotationAngleGlobe === 210 || rotationAngleGlobe === 570 || rotationAngleGlobe === 930) {
-        var openedclock = document.getElementById('clock-open');
-        openedclock.play();
+        solved = true;
+        document.querySelector('.purple').style.cursor = "url('./assets/images/cursor.png'), auto";
+        var light = document.getElementById('light');
+        light.play();
+        document.querySelector('.frame').style.backgroundImage = "url('./assets/images/globeFrame2.png')"
+        document.querySelector('.room-one').style.backgroundImage = "url('./assets/images/background3.png')"
     }
 }
 
