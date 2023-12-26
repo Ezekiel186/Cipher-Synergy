@@ -249,16 +249,34 @@ footer img {
     justify-content: space-around;
 }
 
-/* teal */
+/* cassette player */
 
 .room-one .teal {
     position: absolute;
     left: 35%;
     top: 30px;
-    background-color: teal;
+    background-image: url(./images/cassette.png);
+    background-size: cover;
     width: 450px;
-    height: 450px;
+    height: 500px;
     transform: rotate(356deg);
+    display: flex;
+    justify-content: center;
+}
+
+.teal .cassette-btns {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    display: flex;
+}
+
+.teal button {
+    height: 50px;
+    width: 30px;
+    margin: 1px;
+    background-color: transparent;
+    border: 0;
 }
 
 /* clock */

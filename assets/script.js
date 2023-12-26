@@ -104,6 +104,7 @@ function buttonClick(number) {
         if (currentNum === sequence.length) {
             var win = document.getElementById('win');
             win.play();
+            audio.pause();
             currentNum = 0; 
         }
     } else {
@@ -120,6 +121,27 @@ player1.addEventListener('click', function() {
     var clickSound = document.getElementById('player-select');
     clickSound.play();
 });
+
+// cassette player
+
+let order = [2, 5, 2, 1, 5];
+let buttonClicked = 0;
+
+function sound(number) {
+
+    var thudPress = document.getElementById('thud-press');
+        thudPress.currentTime = 0;
+        thudPress.play();
+
+    if (number === order[buttonClicked]) {
+        buttonClicked++;
+        if (buttonClicked === order.length) {
+            buttonClicked = 0; 
+        }
+    } else {
+        buttonClicked = 0;
+    }
+}
 
 // clock
 let rotationAnglemin = 240;
