@@ -94,6 +94,11 @@ let sequence = [8, 3, 7, 4, 9, 2];
 let currentNum = 0;
 
 function buttonClick(number) {
+
+    var press = document.getElementById('press');
+        press.currentTime = 0;
+        press.play();
+
     if (number === sequence[currentNum]) {
         currentNum++;
         if (currentNum === sequence.length) {
