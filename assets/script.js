@@ -88,6 +88,24 @@ function changeVolume(value) {
    audio.volume = value;
 }
 
+// pads
+
+let sequence = [8, 3, 7, 4, 9, 2];
+let currentNum = 0;
+
+function buttonClick(number) {
+    if (number === sequence[currentNum]) {
+        currentNum++;
+        if (currentNum === sequence.length) {
+            var win = document.getElementById('win');
+            win.play();
+            currentNum = 0; 
+        }
+    } else {
+        currentNum = 0;
+    }
+}
+
 // player 1 room
 
 player1.addEventListener('click', function() {

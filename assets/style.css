@@ -203,7 +203,17 @@ footer img {
     padding: 45px;
 }
 
-/* pad */
+/* pads */
+
+.room-two .pad {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    background-image: url('./images/pad.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .room-one .white {
     position: absolute;
@@ -211,17 +221,43 @@ footer img {
     left: 40%;
     background-image: url('./images/pad.png');
     background-size: cover;
-    width: 20%;
-    height: 40%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
+
+.btn-container {
+    position: absolute;
+    bottom: 50px;
+    left: 53px;
+}
+
+.btn-container button {
+    width: 65px;
+    height: 65px;
+    background-image: url(./images/padNoVal.png);
+    background-size: cover;
+    border: 0;
+    font-size:larger;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.topNum, .midNum, .botNum {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* teal */
 
 .room-one .teal {
     position: absolute;
-    left: 40%;
+    left: 35%;
     top: 30px;
     background-color: teal;
-    width: 20%;
-    height: 35%;
+    width: 450px;
+    height: 450px;
     transform: rotate(356deg);
 }
 
@@ -238,7 +274,7 @@ footer img {
 .room-one .red {
     position: absolute;
     top: 60px;
-    right: 60px;
+    right: 20px;
     background-size: cover;
     background-color: transparent;
     border-radius: 50%;
@@ -267,7 +303,7 @@ footer img {
     position: absolute;
     width: 500px;
     bottom: 60px;
-    right: 90px;
+    right: 50px;
 }
 
 .room-one .clock-hands button {
@@ -356,18 +392,6 @@ footer img {
     bottom: 157px;
     width: 60px;
     height: 60px;
-}
-
-/* pad */
-
-.room-two .pad {
-    position: absolute;
-    bottom: 30px;
-    right: 25px;
-    background-image: url('./images/pad.png');
-    background-size: cover;
-    width: 20%;
-    height: 40%;
 }
 
 /* Frame */
