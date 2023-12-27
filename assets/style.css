@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     left: 0;
-    height: 15%;
+    height: 130px;
 }
 
 .home nav img {
@@ -73,22 +73,22 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Rules and About pages */
-.rules-info, .credit-info {
+/* Solutions, Rules, and About pages */
+.rules-info, .credit-info, .solution-text {
     padding: 45px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#back1, #back2 {
+#back0, #back1, #back2 {
     background-color: transparent;
     border: 0;
     height: 50px;
     width: 50px;
     position: absolute;
     left: 10px;
-    top: 16%;
+    top: 140px;
     background-image: url('./images/back.png');
     background-size: cover;
 }
@@ -96,6 +96,15 @@ body {
 .text-info {
     padding: 140px;
     text-align: center;
+}
+
+.solution-info {
+    text-align: center;
+    display: flex;
+}
+
+.playerone, .playertwo {
+    width: 50%;
 }
 
 footer {

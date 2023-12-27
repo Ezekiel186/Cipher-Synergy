@@ -1,4 +1,4 @@
-// Button functions
+// Page Changes
 
 // rules
 const ruleButton = document.getElementById('Rules');
@@ -8,6 +8,7 @@ const buttonContainer = document.querySelector('.buttons-container');
 const creditsButton = document.getElementById('Credits');
 const creditsInfo = document.querySelector('.credit-info');
 
+const backBtnSolutions = document.getElementById('back0');
 const backBtnRules = document.getElementById('back1');
 const backBtnCredits = document.getElementById('back2');
 
@@ -17,21 +18,39 @@ const home = document.querySelector('.home');
 const room1 = document.querySelector('.room-one');
 const room2 = document.querySelector('.room-two');
 
+const solutionText = document.querySelector('.solution-text')
+
 ruleButton.addEventListener('click', function() {
     rulesInfo.classList.remove('hide');
+    solutionText.classList.add('hide')
     buttonContainer.classList.add('hide');
     creditsInfo.classList.add('hide');
+});
+
+// Solutions
+
+document.getElementById('Solutions').addEventListener('click', function() {
+    solutionText.classList.remove('hide');
+    creditsInfo.classList.add('hide');
+    buttonContainer.classList.add('hide');
+    rulesInfo.classList.add('hide');
 });
 
 // Credits
 
 creditsButton.addEventListener('click', function() {
     creditsInfo.classList.remove('hide');
+    solutionText.classList.add('hide')
     buttonContainer.classList.add('hide');
     rulesInfo.classList.add('hide');
 });
 
 //back
+
+backBtnSolutions.addEventListener('click', function() {
+    solutionText.classList.add('hide');
+    buttonContainer.classList.remove('hide');
+});
 
 backBtnRules.addEventListener('click', function() {
     rulesInfo.classList.add('hide');
