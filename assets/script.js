@@ -179,6 +179,13 @@ function sound(number) {
             var polaroid = document.getElementById('polaroid');
             polaroid.play()
             buttonClicked = 0; 
+            setTimeout(function() {
+                document.querySelector('.photo').style.height = '150px';
+                buttonClicked = 0;
+            }, 1500);
+            setTimeout(function() {
+                document.querySelector('.photo').style.backgroundImage = "url('./assets/images/polaroid2.png')";
+            }, 5000);
         }
     } else {
         buttonClicked = 0;

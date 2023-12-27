@@ -251,6 +251,17 @@ footer img {
 
 /* cassette player */
 
+.teal .photo {
+    width: 150px;
+    height: 1px;
+    background-image: url(./images/polaroid.png);
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+    bottom: 230px;
+    transition: height 2s ease-in-out, background-image 5s ease-out;;
+}
+
 .room-one .teal {
     position: absolute;
     left: 35%;
