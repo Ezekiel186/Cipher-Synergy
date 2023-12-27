@@ -164,7 +164,7 @@ document.querySelector('.sound6').addEventListener('click', function () {
 
 // order
 
-let order = [2, 5, 2, 1, 5];
+let order = [2, 2, 6, 1, 5];
 let buttonClicked = 0;
 
 function sound(number) {
@@ -176,6 +176,8 @@ function sound(number) {
     if (number === order[buttonClicked]) {
         buttonClicked++;
         if (buttonClicked === order.length) {
+            var polaroid = document.getElementById('polaroid');
+            polaroid.play()
             buttonClicked = 0; 
         }
     } else {
