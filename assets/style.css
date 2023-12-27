@@ -661,6 +661,31 @@ footer img {
     padding: 20px;
 }
 
+.end {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.congrats-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.congrats {
+    background-color: aqua;
+    width: 650px;
+    height: 500px;
+}
+
 /* keep at bottom */
 
 .hide, audio {

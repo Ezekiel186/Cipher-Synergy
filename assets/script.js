@@ -124,6 +124,10 @@ function buttonClick(number) {
             var win = document.getElementById('win');
             win.play();
             audio.pause();
+            var end = document.querySelector('.end');
+            var congrats = document.querySelector('.congrats-container');
+            end.classList.remove('hide');
+            congrats.classList.remove('hide');
             currentNum = 0; 
         }
     } else {

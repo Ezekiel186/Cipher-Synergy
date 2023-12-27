@@ -28,7 +28,7 @@
                     <h3>Cassete Player</h3>
                     When the radio knobs are turned in the right ways in Room 2 a series of sounds can be heard, player 2 can replay the sounds by clicking the replay button on the top right of the radio's control area. The correct sequence of buttons to press on the cassete player from left to right is, 2nd, 2nd, 6th, 1st, and 5th.
                     <h3>Globe</h3>
-                    After player 2 solves the frame puzzle, a photo of the correct orientation of the globe appears, Note that the globe is viewed from the top, to properly orient the globe have North America face the right, and Eurasia Face the left, make sure that Greenland is touching the globes frame.
+                    After player 2 solves the frame puzzle, a photo of the correct orientation of the globe appears, Note that the globe is viewed from the top, to properly orient the globe have North America face the right, and Eurasia Face the left, make sure that Greenland is touching the globes frame. Once oriented properly click the button on the right side of the globe to get the next clue.
                     <h3>Pad</h3>
                     After Player 2 solves the frame puzzle a hidden text on the top right inside the frame reads "***492", And when Player 1 solves the globe puzzle a black light highlights the invisible text on the globe that reads "873***". When put together 873492 is the sequence of numbers needed to escape the room.
                 </div>
@@ -266,6 +266,10 @@
             Volume
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
         </div>
+    </div>
+    <div class="end hide"></div>
+    <div class="congrats-container hide">
+        <div class="congrats"></div>
     </div>
     <audio id="polaroid" src="./assets/Music/polaroid-taking-picture-6280.mp3"></audio>
     <audio id="sound1" src="./assets/Music/note1.mp4"></audio>
