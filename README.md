@@ -1,6 +1,8 @@
 # Cipher-Synergy
 
 ## Description
+[Visit Deployed Site](https://ezekiel186.github.io/Cipher-Synergy/)
+
 Cipher Synergy is a two player escape room website. Tackle a series of mind-bending puzzles and challenges. This website was inspired from Enchambered, Live Escape Room Adventure's [Alone Together](https://www.enchambered.com/puzzles/alone-together/). This project was born out of a passion for coding and puzzle-solving, developed by a recent graduate of U.C. Berkeley's full stack coding bootcamp. This is my very first personal project outside of the bootcamp.
     
 ## How to Play
