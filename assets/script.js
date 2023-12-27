@@ -125,41 +125,71 @@ player1.addEventListener('click', function() {
 // cassette player
 
 // sounds
+var sound1 = document.getElementById('sound1');
+var sound2 = document.getElementById('sound2');
+var sound3 = document.getElementById('sound3');
+var sound4 = document.getElementById('sound4');
+var sound5 = document.getElementById('sound5');
+var sound6 = document.getElementById('sound6');
 
 document.querySelector('.sound1').addEventListener('click', function () {
-    var sound1 = document.getElementById('sound1');
     sound1.currentTime = 0;
     sound1.play()
+    sound2.pause()
+    sound3.pause()
+    sound4.pause()
+    sound5.pause()
+    sound6.pause()
 });
 
 document.querySelector('.sound2').addEventListener('click', function () {
-    var sound2 = document.getElementById('sound2');
     sound2.currentTime = 0;
     sound2.play()
+    sound1.pause()
+    sound3.pause()
+    sound4.pause()
+    sound5.pause()
+    sound6.pause()
 });
 
 document.querySelector('.sound3').addEventListener('click', function () {
-    var sound3 = document.getElementById('sound3');
     sound3.currentTime = 0;
     sound3.play()
+    sound2.pause()
+    sound1.pause()
+    sound4.pause()
+    sound5.pause()
+    sound6.pause()
 });
 
 document.querySelector('.sound4').addEventListener('click', function () {
-    var sound4 = document.getElementById('sound4');
     sound4.currentTime = 0;
     sound4.play()
+    sound2.pause()
+    sound3.pause()
+    sound1.pause()
+    sound5.pause()
+    sound6.pause()
 });
 
 document.querySelector('.sound5').addEventListener('click', function () {
-    var sound5 = document.getElementById('sound5');
     sound5.currentTime = 0;
     sound5.play()
+    sound2.pause()
+    sound3.pause()
+    sound4.pause()
+    sound1.pause()
+    sound6.pause()
 });
 
 document.querySelector('.sound6').addEventListener('click', function () {
-    var sound6 = document.getElementById('sound6');
     sound6.currentTime = 0;
     sound6.play()
+    sound2.pause()
+    sound3.pause()
+    sound4.pause()
+    sound5.pause()
+    sound1.pause()
 });
 
 // order
@@ -239,7 +269,7 @@ let intervalId;
 let solved = false;
 
 function addAngle() {
-    rotationAngleGlobe = (rotationAngleGlobe + 15) % 1080;
+    rotationAngleGlobe = (rotationAngleGlobe + 10) % 1080;
     document.querySelector('.globe').style.transform = `rotate(${rotationAngleGlobe}deg)`;
 }
 
