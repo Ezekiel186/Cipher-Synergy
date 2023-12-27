@@ -124,6 +124,46 @@ player1.addEventListener('click', function() {
 
 // cassette player
 
+// sounds
+
+document.querySelector('.sound1').addEventListener('click', function () {
+    var sound1 = document.getElementById('sound1');
+    sound1.currentTime = 0;
+    sound1.play()
+});
+
+document.querySelector('.sound2').addEventListener('click', function () {
+    var sound2 = document.getElementById('sound2');
+    sound2.currentTime = 0;
+    sound2.play()
+});
+
+document.querySelector('.sound3').addEventListener('click', function () {
+    var sound3 = document.getElementById('sound3');
+    sound3.currentTime = 0;
+    sound3.play()
+});
+
+document.querySelector('.sound4').addEventListener('click', function () {
+    var sound4 = document.getElementById('sound4');
+    sound4.currentTime = 0;
+    sound4.play()
+});
+
+document.querySelector('.sound5').addEventListener('click', function () {
+    var sound5 = document.getElementById('sound5');
+    sound5.currentTime = 0;
+    sound5.play()
+});
+
+document.querySelector('.sound6').addEventListener('click', function () {
+    var sound6 = document.getElementById('sound6');
+    sound6.currentTime = 0;
+    sound6.play()
+});
+
+// order
+
 let order = [2, 5, 2, 1, 5];
 let buttonClicked = 0;
 

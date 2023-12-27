@@ -91,12 +91,12 @@
         <!-- cassette player -->
         <div class="teal">
             <div class="cassette-btns">
-                <button onclick="sound(1)"></button>
-                <button onclick="sound(2)"></button>
-                <button onclick="sound(3)"></button>
-                <button onclick="sound(4)"></button>
-                <button onclick="sound(5)"></button>
-                <button onclick="sound(6)"></button>
+                <button class="sound1" onclick="sound(1)"></button>
+                <button class="sound2" onclick="sound(2)"></button>
+                <button class="sound3" onclick="sound(3)"></button>
+                <button class="sound4" onclick="sound(4)"></button>
+                <button class="sound5" onclick="sound(5)"></button>
+                <button class="sound6" onclick="sound(6)"></button>
             </div>
         </div>
         <div class="volume-container">
@@ -234,6 +234,12 @@
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
         </div>
     </div>
+    <audio id="sound1" src="./assets/Music/note1.mp3"></audio>
+    <audio id="sound2" src="./assets/Music/note2.mp3"></audio>
+    <audio id="sound3" src="./assets/Music/note3.mp3"></audio>
+    <audio id="sound4" src="./assets/Music/note4.mp3"></audio>
+    <audio id="sound5" src="./assets/Music/note5.mp3"></audio>
+    <audio id="sound6" src="./assets/Music/note6.mp3"></audio>
     <audio id="thud-press" src="./assets/Music/thud-press.mp4"></audio>
     <audio id="press" src="./assets/Music/press.mp4"></audio>
     <audio id="win" src="./assets/Music/success-fanfare-trumpets-6185.mp3"></audio>
