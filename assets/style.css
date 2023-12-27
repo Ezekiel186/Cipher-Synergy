@@ -60,13 +60,14 @@ body {
 }
 
 .home .right  button, .home .left  button {
-    height: 150px;
-    width: 450px;
+    height: 200px;
+    width: 470px;
     font-size: 35px;
     font-weight: bold;
+    text-align: center;
     border: 0;
     background-color: transparent;
-    background-image: url('./images/Buttons.png');
+    background-image: url('./images/image-from-rawpixel-id-12681938-original.png');
     background-size: cover;
     color: rgb(245, 56, 56);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -99,7 +100,7 @@ body {
 }
 
 .solution-info {
-    text-align: center;
+
     display: flex;
 }
 
@@ -680,9 +681,26 @@ footer img {
     align-items: center;
 }
 
+.congrats-container p {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(245, 56, 56);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.end-text {
+    display: block;
+}
+
 .congrats {
-    background-color: aqua;
-    width: 650px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url('./images/image-from-rawpixel-id-12682161-original.png');
+    background-size: cover;
+    width: 1200px;
     height: 500px;
 }
 
