@@ -14,36 +14,34 @@ body {
     justify-content: center;
     align-items: center;
     left: 0;
-    height: 130px;
+    height: 8.5vw;
 }
 
 .home nav img {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 2vw;
+    top: 0.5vw;
     height: 90%;
 }
 
 .button-container {
     position: absolute;
     right: 0;
-    padding: 5px;
+    padding: 0.5%;
 }
 
 .button-container button {
-    padding: 50px;
+    padding: 3vw;
     border: solid 1px transparent;
     border-left: solid 1px gray;
     border-right: solid 1px gray;
     background-color: black;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: white;
 }
 
 .buttons-container {
     display: flex;
-    margin-left: 120px;
-    margin-right: 120px;
     margin-top: 12%;
     height: 70vh
 }
@@ -60,9 +58,9 @@ body {
 }
 
 .home .right  button, .home .left  button {
-    height: 200px;
-    width: 470px;
-    font-size: 35px;
+    height: 12vw;
+    width: 30vw;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
     border: 0;
@@ -76,7 +74,7 @@ body {
 
 /* Solutions, Rules, and About pages */
 .rules-info, .credit-info, .solution-text {
-    padding: 45px;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -85,22 +83,22 @@ body {
 #back0, #back1, #back2 {
     background-color: transparent;
     border: 0;
-    height: 50px;
-    width: 50px;
+    height: 3vw;
+    width: 3vw;
     position: absolute;
-    left: 10px;
-    top: 140px;
+    left: 1%;
+    top: 9vw;
     background-image: url('./images/back.png');
     background-size: cover;
 }
 
 .text-info {
-    padding: 140px;
     text-align: center;
 }
 
 .solution-info {
-
+    margin-top: -2%;
+    font-size: 90%;
     display: flex;
 }
 
@@ -717,4 +715,151 @@ footer img {
 
 .hide, audio {
     display: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1250px) {
+    .solution-info {
+        font-size: 70%;
+    }
+
+    .room-one .teal {
+        top: 30%;
+    }
+
+    .room-one .red {
+        top: 30%;
+    }
+
+    .room-two .black {
+        top: 20%;
+    }
+
+    .congrats {
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .congrats-container p {
+        position: relative;
+        font-size: 5vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .room-two .black {
+        top: 45%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        transform: rotate(90deg);
+    }
+
+    .room-one, .room-two {
+        height: 100vw;
+        width: 100vh;
+        background-image: url('./images/background.jpeg');
+        background-size: cover;
+    }
+
+    .room-two {
+        background-image: url('./images/background2.png');
+        background-size: cover;
+    }
+
+    .buttons-container {
+        display: flex;
+        margin-top: 0;
+        height: 70vw
+    }
+
+    .home {
+        margin-top: 0;
+        height: 100vw;
+        width: 100vh;
+    }
+
+    .home nav {
+        width: 100vh;
+    }
+
+    .text-info {
+        margin-top: 12%;
+        margin-bottom: 300px;
+    }
+
+    .solution-info {
+        margin-top: 12%;
+        font-size: 10px;
+    }
+
+    footer {
+        width: 100vh;
+    }
+
+    /* Globe */
+
+    .room-one .purple {
+        width: 35vh;
+        height: 35vw;
+        bottom: 23vh;
+    }
+
+    .check-globe {
+        left: 40vh;
+    }
+
+    /* Pads */
+
+    .room-one .white {
+        position: absolute;
+        bottom: 30px;
+        left: 50vh;
+    }
+
+    /* cassette player */
+
+    .room-one .teal {
+        left: 40vh;
+        top: 30px;
+    }
+
+    .sound1, .sound2, .sound3, .sound4, .sound5, .sound6  {
+        padding: 1px;
+        height: 10px;
+        margin: 0.2px;
+        border: 0;
+    }
+
+    /* clock */
+
+    .room-one .red {
+        top: 10px;
+        left: 62vh;
+    }
+
+    .room-one .clock-hands {
+        bottom: 10%;
+        left: 66vh;
+    }
+
+    /* end */
+
+    .congrats {
+        width: 670px;
+        height: 300px;
+    }
+
+    .end {
+        width: 100vh;
+        height: 100vw;
+    }
+    
+    .congrats-container {
+        width: 100vh;
+        height: 100vw;
+    }
 }
