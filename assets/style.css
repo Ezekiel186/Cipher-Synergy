@@ -225,8 +225,9 @@ footer img {
     right: 25px;
     background-image: url('./images/pad.png');
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 17.5%;
+    padding-top: 17.5%;
+    max-width: 300px;
 }
 
 .room-one .white {
@@ -389,8 +390,8 @@ footer img {
     transform: rotate(-3deg);
     background-size: cover;
     background-image: url('./images/radio.png');
-    width: 900px;
-    height: 567px;
+    width: 53vw;
+    height: 33vw;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -398,8 +399,8 @@ footer img {
 
 .black button {
     position: relative;
-    width: 46px;
-    height: 46px;
+    width: 3vw;
+    height: 3vw;
     border: 0;
     background-image: url('./images/radiobtn.png');
     background-size: cover;
@@ -407,93 +408,78 @@ footer img {
 }
 
 .black .replay {
-    width: 47px;
-    height: 25px;
+    width: 2.8vw;
+    height: 1.4vw;
     background-image: url('./images/replay.png');
     position: absolute;
-    bottom: 202px;
-    right: 100px;
+    bottom: 12vw;
+    right: 5.5vw;
 }
 
 .left-radio {
-    width: 200px;
-    height: 60px;
+    width: 23%;
+    height: 10%;
     position: relative;
-    left: -100px;
+    left: -11%;
 }
 
 .right-radio {
-    width: 200px;
-    height: 60px;
+    width: 23%;
+    height: 10%;
     position: relative;
-    right: -170px;
-    bottom: -10px;
+    right: -18%;
+    bottom: -1%;
 }
 
 .black .btn-1 {
     transform: rotate(135deg);
-    margin-right: 20px;
-    bottom: 155px; 
-    width: 60px;
-    height: 60px;
+    margin-right: 10%;
+    bottom: 9.1vw; 
+    width: 4vw;
+    height: 4vw;
 }
 
 .black .btn-2 {
     transform: rotate(45deg);
-    bottom: 160px;
+    bottom: 9.5vw;
 }
 
 .black .btn-3 {
     transform: rotate(90deg);
-    bottom: 165px;
+    bottom: 9.9vw;
 }
 
 .black .btn-4 {
-    margin-left: 20px;
-    bottom: 157px;
-    width: 60px;
-    height: 60px;
+    margin-left: 10%;
+    bottom: 9.4vw;
+    width: 4vw;
+    height: 4vw;
 }
 
 /* Frame */
 
 .room-two .yellow {
     position: absolute;
-    bottom: 20px;
+    bottom: 1%;
     right: 22%;
     transform: rotate(3deg);
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 23.5vw;
+    height: 23.5vw;
 }
 
-.yellow .top {
-    width: 260px;
-    height: 86px;
+.yellow .top, .yellow .mid, .yellow .bot {
+    width: 15.9vw;
+    height: 5vw;
     position: relative;
-    top: 73px;
-    left: 70px;
-}
-
-.yellow .mid {
-    width: 260px;
-    height: 86px;
-    position: relative;
-    top: 73px;
-    left: 70px;
-}
-
-.yellow .bot {
-    width: 260px;
-    height: 86px;
-    position: relative;
-    top: 73px;
-    left: 70px;
+    top: 4.2vw;
+    left: 4vw;
+    margin: 2px;
 }
 
 .yellow button {
-    width: 84px;
-    height: 84px;
+    width: 4.9vw;
+    height: 4.9vw;
     border: 0;
 }
 
@@ -536,14 +522,15 @@ footer img {
     background-size: cover;
 }
 
-/* combination */
+/* case */
 
 .room-two .green {
     position: absolute;
-    bottom: 30px;
-    left: 25px;
+    bottom: 5%;
+    left: 1.5%;
     transform: rotate(5deg);
-    width: 894px;
+    width: 52vw;
+    height: 22vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,49 +539,49 @@ footer img {
 }
 
 .carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/yellow.png');
     background-size: cover;
 }
 
 .carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/orange.png');
     background-size: cover;
 }
 
 .carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/green.png');
     background-size: cover;
 }
 
 .carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/black.png');
     background-size: cover;
 }
 
 .carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/red.png');
     background-size: cover;
 }
 
 .carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
-    height: 35px;
-    width: 20px;
+    height: 2vw;
+    width: 1.2vw;
     background-image: url('./images/blue.png');
     background-size: cover;
 }
 
 .Lock6, .Lock5, .Lock4, .Lock3, .Lock2, .Lock1 {
-    margin: 5px;
+    margin: 0.23vw;
 }
 
 .Lock6 button, .Lock5 button, .Lock4 button, .Lock3 button, .Lock2 button, .Lock1 button {
@@ -661,27 +648,27 @@ footer img {
 
 .left-lock {
     cursor: auto;
-    width: 100px;
-    height: 60px;
+    width: 6vw;
+    height: 3.5vw;
     display: flex;
     justify-content: center;
     position: relative;
-    left: -150px;
-    top: 45px;
-    padding: 20px;
+    left: -8.8vw;
+    top: 2.6vw;
+    padding: 1vw;
     transform: rotate(1deg);
 }
 
 .right-lock { 
     cursor: auto;
-    width: 100px;
-    height: 60px;
+    width: 6vw;
+    height: 3.5vw;
     display: flex;
     justify-content: center;
     position: relative;
-    right: -150px;
-    top: 48px;
-    padding: 20px;
+    right: -8.8vw;
+    top: 2.8vw;
+    padding: 1vw;
 }
 
 .end {
