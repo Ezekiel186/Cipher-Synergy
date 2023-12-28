@@ -803,51 +803,96 @@ footer img {
     /* Globe */
 
     .room-one .purple {
-        width: 35vh;
-        height: 35vw;
-        bottom: 23vh;
+        width: 30vh;
+        height: 25vw;
+        bottom: 22vh;
     }
 
     .check-globe {
-        left: 40vh;
+        left: 35vh;
+        height: 50px;
+        width: 50px;
     }
 
     /* Pads */
 
     .room-one .white {
         bottom: 30px;
-        left: 50vh;
-    }
+        left: 40vh;
+        min-height: 140px;
+        min-width: 145px;
+        padding-top: 0;
+}
 
     .room-two .pad {
         bottom: 30px;
         left: 80vh;
     }
 
+    .btn-container {
+        bottom: 23px;
+        left: 20%;
+    }
+    
+    .btn-container button {
+        width: 35px;
+        height: 30px;
+        font-size: medium;
+    }
+
     /* cassette player */
 
     .room-one .teal {
-        left: 40vh;
+        left: 35vh;
         top: 30px;
+        width: 230px;
+        height: 260px;
+        padding-bottom: 0;
+    }
+
+    .teal .cassette-btns {
+        bottom: 20px;
+        right: 39px;
     }
 
     .sound1, .sound2, .sound3, .sound4, .sound5, .sound6  {
-        padding: 1px;
-        height: 10px;
-        margin: 0.2px;
-        border: 0;
+        width: 15px;
+        height: 20px;
+        margin: 0.9px;
     }
 
     /* clock */
 
     .room-one .red {
         top: 10px;
-        left: 62vh;
+        left: 60vh;
+        height: 320px;
+        width: 320px;
+        padding-bottom: 0;
     }
 
+    .rotateh {
+        width: 340px;
+        height: 340px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .rotatem {
+        width: 340px;
+        height: 340px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
     .room-one .clock-hands {
-        bottom: 10%;
-        left: 66vh;
+        width: 30vh;
+        left: 63vh;
+    }
+
+    .room-one .clock-hands button {
+        width: 60px;
+        height: 60px;
     }
 
     /* end */
