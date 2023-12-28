@@ -815,9 +815,13 @@ footer img {
     /* Pads */
 
     .room-one .white {
-        position: absolute;
         bottom: 30px;
         left: 50vh;
+    }
+
+    .room-two .pad {
+        bottom: 30px;
+        left: 80vh;
     }
 
     /* cassette player */
@@ -862,4 +866,29 @@ footer img {
         width: 100vh;
         height: 100vw;
     }
+
+    /* radio */
+
+    .room-two .black {
+        top: 10px;
+        left: 55vh;
+    }
+
+    /* media quieries */
+
+    .room-two .yellow {
+        bottom: 1%;
+        left: 60vh;
+    }
+    
+    .yellow .top, .yellow .mid, .yellow .bot {
+        width: 17vw;
+    }
+
+    /* case */
+
+    .room-two .green {
+        left: 5vh;
+    }
+
 }
