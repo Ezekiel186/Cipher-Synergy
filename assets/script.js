@@ -233,7 +233,7 @@ function sound(number) {
             polaroid.play()
             buttonClicked = 0; 
             setTimeout(function() {
-                document.querySelector('.photo').style.height = '150px';
+                document.querySelector('.photo').style.height = '28%';
                 buttonClicked = 0;
             }, 1500);
             setTimeout(function() {
