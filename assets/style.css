@@ -669,6 +669,8 @@ footer img {
     padding: 1vw;
 }
 
+/* End Screen */
+
 .end {
     position: absolute;
     top: 0;
@@ -845,11 +847,14 @@ footer img {
         min-height: 140px;
         min-width: 145px;
         padding-top: 0;
-}
+    }
 
     .room-two .pad {
         bottom: 30px;
         left: 80vh;
+        min-height: 140px;
+        min-width: 145px;
+        padding-top: 0;
     }
 
     .btn-container {
@@ -861,6 +866,7 @@ footer img {
         width: 35px;
         height: 30px;
         font-size: medium;
+        color: black;
     }
 
     /* cassette player */
@@ -939,24 +945,60 @@ footer img {
 
     .room-two .black {
         top: 10px;
-        left: 55vh;
+        left: 45vh;
+        width: 450px;
+        height: 250px;
     }
 
     /* frame */
 
     .room-two .yellow {
-        bottom: 1%;
-        left: 60vh;
+        bottom: 5vh;
+        left: 55vh;
+        width: 175px;
+        height: 175px;
     }
+
     
     .yellow .top, .yellow .mid, .yellow .bot {
-        width: 17vw;
+        width: 120px;
+        height: 40px;
+        top: 30px;
+        left: 30px;
+        margin: 0px;
+    }
+
+    .yellow button {
+        width: 35px;
+        height: 35px;
+        border: 0;
     }
 
     /* case */
 
     .room-two .green {
-        left: 5vh;
+        left: 2vh;
+        width: 430px;
+    }
+
+        
+    .carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1, .carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2, .carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3,  .carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4,  .carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5, .carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
+        height: 19px;
+        width: 11px;
+    }
+
+    .left-lock {
+        width: 60px;
+        height: 35px;
+        left: -73px;
+        top: 31px;
+    }
+
+    .right-lock { 
+        width: 60px;
+        height: 35px;
+        right: -72px;
+        top: 33px;
     }
 
 }

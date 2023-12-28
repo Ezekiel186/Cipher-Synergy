@@ -589,7 +589,11 @@ function checkCombination() {
     if (currentIndex1 === 3 && currentIndex2 === 5 && currentIndex3 === 2 && currentIndex4 === 0 && currentIndex5 === 4 && currentIndex6 === 1) {
         console.log("yes");
         briefcase.style.backgroundImage = 'url("./assets/images/opened.png")'
-        briefcase.style.height = '45.5vw';
+        if (window.matchMedia("(max-width: 770px)").matches) {
+            briefcase.style.height = '380px';
+        } else {
+            briefcase.style.height = '45.5vw';
+        }
         document.querySelector('.left-lock').style.display = 'none';
         document.querySelector('.right-lock').style.display = 'none';
         var openedcase = document.getElementById('case-open');
@@ -599,7 +603,11 @@ function checkCombination() {
     } else {
         console.log("no")
         briefcase.style.backgroundImage = 'url("./assets/images/closed.png")'
-        briefcase.style.height = '22vw';
+        if (window.matchMedia("(max-width: 770px)").matches) {
+            briefcase.style.height = '170px';
+        } else {
+            briefcase.style.height = '22vw';
+        }
     }
 }
 
