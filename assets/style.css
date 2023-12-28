@@ -784,6 +784,20 @@ footer img {
 
     .home nav {
         width: 100vh;
+        height: 8vh;
+    }
+
+    .button-container button {
+        padding: 3vh;
+        font-size: 1.5vh;
+    }
+
+    #back0, #back1, #back2 {
+        height: 3vh;
+        width: 3vh;
+        position: absolute;
+        left: 1%;
+        top: 9vh;
     }
 
     .text-info {
@@ -792,12 +806,21 @@ footer img {
     }
 
     .solution-info {
-        margin-top: 12%;
+        margin-top: 6.5vh;
         font-size: 10px;
+        margin-bottom: 300px;
+        text-align: center;
     }
 
     footer {
         width: 100vh;
+    }
+    
+    .home .right  button, .home .left  button {
+        height: 12vh;
+        width: 30vh;
+        font-size: 2.5vh;
+        margin-top: 20vh;
     }
 
     /* Globe */
@@ -845,20 +868,20 @@ footer img {
     .room-one .teal {
         left: 35vh;
         top: 30px;
-        width: 230px;
-        height: 260px;
+        width: 200px;
+        height: 230px;
         padding-bottom: 0;
     }
 
     .teal .cassette-btns {
-        bottom: 20px;
-        right: 39px;
+        bottom: 21px;
+        right: 35px;
     }
 
     .sound1, .sound2, .sound3, .sound4, .sound5, .sound6  {
-        width: 15px;
-        height: 20px;
-        margin: 0.9px;
+        width: 13px;
+        height: 18px;
+        margin: 0.6px;
     }
 
     /* clock */
@@ -919,7 +942,7 @@ footer img {
         left: 55vh;
     }
 
-    /* media quieries */
+    /* frame */
 
     .room-two .yellow {
         bottom: 1%;
