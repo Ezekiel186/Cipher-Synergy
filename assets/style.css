@@ -790,7 +790,7 @@ footer img {
     }
 
     .button-container button {
-        padding: 3vh;
+        padding: 2.8vh;
         font-size: 1.5vh;
     }
 
@@ -834,7 +834,7 @@ footer img {
     }
 
     .check-globe {
-        left: 35vh;
+        left: 33vh;
         height: 50px;
         width: 50px;
     }
@@ -844,28 +844,28 @@ footer img {
     .room-one .white {
         bottom: 30px;
         left: 40vh;
-        min-height: 140px;
-        min-width: 145px;
+        min-height: 100px;
+        min-width: 105px;
         padding-top: 0;
     }
 
     .room-two .pad {
         bottom: 30px;
         left: 80vh;
-        min-height: 140px;
-        min-width: 145px;
+        min-height: 100px;
+        min-width: 105px;
         padding-top: 0;
     }
 
     .btn-container {
-        bottom: 23px;
-        left: 20%;
+        bottom: 13px;
+        left: 22px;
     }
     
     .btn-container button {
-        width: 35px;
-        height: 30px;
-        font-size: medium;
+        height: 23px;
+        min-width: 23px;
+        font-size: small;
         color: black;
     }
 
@@ -894,29 +894,30 @@ footer img {
 
     .room-one .red {
         top: 10px;
-        left: 60vh;
-        height: 320px;
-        width: 320px;
+        left: 63vh;
+        height: 250px;
+        width: 250px;
         padding-bottom: 0;
     }
 
     .rotateh {
-        width: 340px;
-        height: 340px;
+        width: 270px;
+        height: 270px;
         margin-top: 0;
         padding-top: 0;
     }
 
     .rotatem {
-        width: 340px;
-        height: 340px;
+        width: 270px;
+        height: 270px;
         margin-top: 0;
         padding-top: 0;
     }
     
     .room-one .clock-hands {
         width: 30vh;
-        left: 63vh;
+        left: 65vh;
+        bottom: 0;
     }
 
     .room-one .clock-hands button {
@@ -944,17 +945,18 @@ footer img {
     /* radio */
 
     .room-two .black {
-        top: -20px;
+        top: 0px;
         left: 45vh;
-        width: 450px;
-        height: 250px;
+        width: 350px;
+        height: 190px;
     }
 
     .left-radio {
         width: 23%;
         height: 10%;
         position: relative;
-        left: -11%;
+        left: -50px;
+        bottom: -10px;
     }
     
     .right-radio {
@@ -962,33 +964,40 @@ footer img {
         height: 10%;
         position: relative;
         right: -18%;
-        bottom: -1%;
+        bottom: -10px;
     }
 
     .black .btn-1 {
         margin-right: 10%;
-        bottom: 55px; 
-        width: 35px;
-        height: 35px;
+        bottom: 49px; 
+        width: 27px;
+        height: 27px;
     }
     
     .black .btn-2 {
-        bottom: 60px;
-        width: 20px;
-        height: 20px;
+        bottom: 54px;
+        width: 19px;
+        height: 19px;
     }
     
     .black .btn-3 {
-        width: 20px;
-        height: 20px;
-        bottom: 60px;
+        width: 19px;
+        height: 19px;
+        bottom: 52px;
     }
     
     .black .btn-4 {
         margin-left: 10%;
-        bottom: 53px;
-        width: 35px;
-        height: 35px;
+        bottom: 47px;
+        width: 27px;
+        height: 27px;
+    }
+
+    .black .replay {
+        width: 28px;
+        height: 14px;
+        bottom: 12px;
+        right: 35px;
     }
 
     /* frame */
@@ -996,50 +1005,50 @@ footer img {
     .room-two .yellow {
         bottom: 5px;
         left: 55vh;
-        width: 175px;
-        height: 175px;
+        width: 160px;
+        height: 160px;
     }
 
     
     .yellow .top, .yellow .mid, .yellow .bot {
-        width: 120px;
-        height: 40px;
-        top: 30px;
+        width: 100px;
+        height: 33px;
+        top: 32px;
         left: 30px;
         margin: 0px;
     }
 
     .yellow button {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border: 0;
     }
 
     /* case */
 
     .room-two .green {
-        left: 2vh;
-        width: 430px;
+        left: 0px;
+        width: 330px;
     }
 
         
     .carousel6-item1, .carousel5-item1, .carousel4-item1, .carousel3-item1, .carousel2-item1, .carousel1-item1, .carousel6-item2, .carousel5-item2, .carousel4-item2, .carousel3-item2, .carousel2-item2, .carousel1-item2, .carousel6-item3, .carousel5-item3, .carousel4-item3, .carousel3-item3, .carousel2-item3, .carousel1-item3,  .carousel6-item4, .carousel5-item4, .carousel4-item4, .carousel3-item4, .carousel2-item4, .carousel1-item4,  .carousel6-item5, .carousel5-item5, .carousel4-item5, .carousel3-item5, .carousel2-item5, .carousel1-item5, .carousel6-item6, .carousel5-item6, .carousel4-item6, .carousel3-item6, .carousel2-item6, .carousel1-item6 {
-        height: 19px;
-        width: 11px;
+        height: 15px;
+        width: 8px;
     }
 
     .left-lock {
         width: 60px;
         height: 35px;
-        left: -73px;
-        top: 31px;
+        left: -45px;
+        top: 24px;
     }
 
     .right-lock { 
         width: 60px;
         height: 35px;
-        right: -72px;
-        top: 33px;
+        right: -47px;
+        top: 25px;
     }
 
 }

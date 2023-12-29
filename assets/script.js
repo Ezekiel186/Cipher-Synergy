@@ -590,7 +590,7 @@ function checkCombination() {
         console.log("yes");
         briefcase.style.backgroundImage = 'url("./assets/images/opened.png")'
         if (window.matchMedia("(max-width: 770px)").matches) {
-            briefcase.style.height = '380px';
+            briefcase.style.height = '290px';
         } else {
             briefcase.style.height = '45.5vw';
         }
@@ -604,7 +604,7 @@ function checkCombination() {
         console.log("no")
         briefcase.style.backgroundImage = 'url("./assets/images/closed.png")'
         if (window.matchMedia("(max-width: 770px)").matches) {
-            briefcase.style.height = '170px';
+            briefcase.style.height = '140px';
         } else {
             briefcase.style.height = '22vw';
         }
