@@ -873,7 +873,7 @@ footer img {
 
     .room-one .teal {
         left: 35vh;
-        top: 30px;
+        top: 10px;
         width: 200px;
         height: 230px;
         padding-bottom: 0;
@@ -944,16 +944,57 @@ footer img {
     /* radio */
 
     .room-two .black {
-        top: 10px;
+        top: -20px;
         left: 45vh;
         width: 450px;
         height: 250px;
     }
 
+    .left-radio {
+        width: 23%;
+        height: 10%;
+        position: relative;
+        left: -11%;
+    }
+    
+    .right-radio {
+        width: 23%;
+        height: 10%;
+        position: relative;
+        right: -18%;
+        bottom: -1%;
+    }
+
+    .black .btn-1 {
+        margin-right: 10%;
+        bottom: 55px; 
+        width: 35px;
+        height: 35px;
+    }
+    
+    .black .btn-2 {
+        bottom: 60px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .black .btn-3 {
+        width: 20px;
+        height: 20px;
+        bottom: 60px;
+    }
+    
+    .black .btn-4 {
+        margin-left: 10%;
+        bottom: 53px;
+        width: 35px;
+        height: 35px;
+    }
+
     /* frame */
 
     .room-two .yellow {
-        bottom: 5vh;
+        bottom: 5px;
         left: 55vh;
         width: 175px;
         height: 175px;
